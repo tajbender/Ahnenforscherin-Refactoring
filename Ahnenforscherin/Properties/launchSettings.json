@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "Ahnenforscherin (Package)": {
+      "commandName": "MsixPackage"
+    },
+    "Ahnenforscherin (Unpackaged)": {
+      "commandName": "Project"
+    }
+  }
+}
