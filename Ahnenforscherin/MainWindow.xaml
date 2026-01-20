@@ -119,7 +119,7 @@
                         Padding="12"
                         CornerRadius="6">
                     <TextBlock x:Name="StatusText"
-                               Text="Bereit."
+                               Text="Bereit wenn Du es bist."
                                Opacity="0.8" />
                 </Border>
 
