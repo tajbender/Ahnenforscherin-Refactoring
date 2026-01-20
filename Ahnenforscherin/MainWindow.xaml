@@ -1,19 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Window
-    x:Class="Ahnenforscherin.MainWindow"
-    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:local="using:Ahnenforscherin"
-    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    mc:Ignorable="d"
-    Title="Ahnenforscherin">
+<Window x:Class="Ahnenforscherin.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:local="using:Ahnenforscherin"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        Title="Ahnenforscherin">
 
     <Window.SystemBackdrop>
         <MicaBackdrop />
     </Window.SystemBackdrop>
 
     <Grid>
-
+        <NavigationView x:Name="mainNavigationView"
+                        Header="Ahnenforscherin"
+                        PaneDisplayMode="Left">
+            <NavigationView.MenuItems>
+                <NavigationViewItem Content="Workbench"
+                                    Tag="WorkbenchPage"
+                                    Icon="Library" />
+                <NavigationViewItem Content="Ahnen"
+                                    Tag="AncientsPage"
+                                    Icon="Map" />
+                <NavigationViewItem Content="Historie"
+                                    Tag="HistoryPage"
+                                    Icon="Tag" />
+            </NavigationView.MenuItems>
+            <NavigationView.FooterMenuItems>
+                <NavigationViewItem Content="Benutzer"
+                                    Tag="AccountPage"
+                                    Icon="Contact" />
+                <NavigationViewItem Content="Datenquelle"
+                                    Tag="DatasourcePage"
+                                    Icon="Shop" />
+                <NavigationViewItem Content="Hilfe"
+                                    Tag="HelpPage"
+                                    Icon="Help" />
+            </NavigationView.FooterMenuItems>
+            <Frame x:Name="contentFrame9" />
+        </NavigationView>
     </Grid>
 </Window>
