@@ -17,15 +17,15 @@
                         Header="Ahnenforscherin"
                         PaneDisplayMode="Left">
             <NavigationView.MenuItems>
-                <NavigationViewItem Content="Workbench"
+                <NavigationViewItem Content="Werkbank"
                                     Tag="WorkbenchPage"
-                                    Icon="Library" />
+                                    Icon="GoToToday" />
                 <NavigationViewItem Content="Ahnen"
                                     Tag="AncientsPage"
-                                    Icon="Map" />
+                                    Icon="People" />
                 <NavigationViewItem Content="Historie"
                                     Tag="HistoryPage"
-                                    Icon="Tag" />
+                                    Icon="Calendar" />
             </NavigationView.MenuItems>
             <NavigationView.FooterMenuItems>
                 <NavigationViewItem Content="Benutzer"
@@ -33,7 +33,7 @@
                                     Icon="Contact" />
                 <NavigationViewItem Content="Datenquelle"
                                     Tag="DatasourcePage"
-                                    Icon="Shop" />
+                                    Icon="Library" />
                 <NavigationViewItem Content="Hilfe"
                                     Tag="HelpPage"
                                     Icon="Help" />
