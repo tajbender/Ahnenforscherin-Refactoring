@@ -26,6 +26,12 @@ namespace Ahnenforscherin
         public MainWindow()
         {
             InitializeComponent();
+
+            /*
+            case "personlist":
+                ContentFrame.Navigate(typeof(PersonListPage));
+                break;
+             */
         }
 
         private void SetStatus(string message)
