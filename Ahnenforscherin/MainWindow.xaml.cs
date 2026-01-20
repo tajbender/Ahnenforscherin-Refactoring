@@ -27,5 +27,47 @@ namespace Ahnenforscherin
         {
             InitializeComponent();
         }
+
+        private void SetStatus(string message)
+        {
+            StatusText.Text = message;
+        }
+
+        private void CreatePerson_Click(object sender, RoutedEventArgs e)
+        {
+            SetStatus("Neue Person anlegen (Dummy)...");
+            // TODO: Navigation zu PersonEditor
+        }
+
+        private void OpenPersonList_Click(object sender, RoutedEventArgs e)
+        {
+            SetStatus("Personenliste öffnen (Dummy)...");
+            // TODO: Navigation zu PersonList
+        }
+
+        private void ImportGedcom_Click(object sender, RoutedEventArgs e)
+        {
+            SetStatus("GEDCOM importieren (Dummy)...");
+            // TODO: FilePicker + Parser
+        }
+
+        private void ExportGedcom_Click(object sender, RoutedEventArgs e)
+        {
+            SetStatus("GEDCOM exportieren (Dummy)...");
+            // TODO: Exportfunktion
+        }
+
+        private void OpenTree_Click(object sender, RoutedEventArgs e)
+        {
+            SetStatus("Stammbaum öffnen (Dummy)...");
+            // TODO: TreeView öffnen
+        }
+
+        private void CreateTree_Click(object sender, RoutedEventArgs e)
+        {
+            SetStatus("Neuen Stammbaum erstellen (Dummy)...");
+            // TODO: Tree-Setup
+        }
+
     }
 }
