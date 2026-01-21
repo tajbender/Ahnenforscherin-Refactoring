@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+	<!-- Basis-Hintergründe -->
+	<Color x:Key="AfBackgroundColor">#FFF5E9D6</Color>
+	<!-- Pergament -->
+	<Color x:Key="AfBackgroundAltColor">#FFEAD7B8</Color>
+	<Color x:Key="AfSurfaceColor">#FFFDF8EE</Color>
+
+	<!-- Akzent- und Rahmenfarben -->
+	<Color x:Key="AfAccentColor">#FFB27A3A</Color>
+	<!-- warmes Ocker -->
+	<Color x:Key="AfAccentDarkColor">#FF8C5A24</Color>
+	<Color x:Key="AfBorderColor">#FFBFA27A</Color>
+
+	<!-- Textfarben -->
+	<Color x:Key="AfTextPrimaryColor">#FF3B2A1A</Color>
+	<!-- dunkles Braun -->
+	<Color x:Key="AfTextSecondaryColor">#FF6B4C30</Color>
+	<Color x:Key="AfTextMutedColor">#FF9C7A52</Color>
+
+	<!-- Brushes -->
+	<SolidColorBrush x:Key="AfBackgroundBrush" Color="{StaticResource AfBackgroundColor}" />
+	<SolidColorBrush x:Key="AfBackgroundAltBrush" Color="{StaticResource AfBackgroundAltColor}" />
+	<SolidColorBrush x:Key="AfSurfaceBrush" Color="{StaticResource AfSurfaceColor}" />
+
+	<SolidColorBrush x:Key="AfAccentBrush" Color="{StaticResource AfAccentColor}" />
+	<SolidColorBrush x:Key="AfAccentDarkBrush" Color="{StaticResource AfAccentDarkColor}" />
+	<SolidColorBrush x:Key="AfBorderBrush" Color="{StaticResource AfBorderColor}" />
+
+	<SolidColorBrush x:Key="AfTextPrimaryBrush" Color="{StaticResource AfTextPrimaryColor}" />
+	<SolidColorBrush x:Key="AfTextSecondaryBrush" Color="{StaticResource AfTextSecondaryColor}" />
+	<SolidColorBrush x:Key="AfTextMutedBrush" Color="{StaticResource AfTextMutedColor}" />
+
+	<!-- Beispiel: Standard-Controls leicht einfärben -->
+	<SolidColorBrush x:Key="ButtonBackground" Color="{StaticResource AfAccentColor}" />
+	<SolidColorBrush x:Key="ButtonForeground" Color="White" />
+	<SolidColorBrush x:Key="ButtonBorderBrush" Color="{StaticResource AfAccentDarkColor}" />
+
+	<SolidColorBrush x:Key="PageBackground" Color="{StaticResource AfBackgroundColor}" />
+</ResourceDictionary>
