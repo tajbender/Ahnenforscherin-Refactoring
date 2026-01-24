@@ -1,6 +1,5 @@
+﻿namespace Ahnenforscherin.Activation;
 ﻿using System.Threading.Tasks;
-
-namespace electrifier.Activation;
 
 public interface IActivationHandler
 {

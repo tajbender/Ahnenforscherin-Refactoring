@@ -1,8 +1,7 @@
-﻿using System.Threading.Tasks;
-using electrifier.Contracts.Services;
+using System.Threading.Tasks;
 using Microsoft.UI.Xaml;
 
-namespace electrifier.Activation;
+namespace Ahnenforscherin.Activation;
 
 public class DefaultActivationHandler : ActivationHandler<LaunchActivatedEventArgs>
 {

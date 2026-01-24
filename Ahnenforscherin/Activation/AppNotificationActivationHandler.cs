@@ -1,4 +1,5 @@
-﻿using Microsoft.UI.Dispatching;
+using Microsoft.UI.Dispatching;
+using Microsoft.UI.Dispatching;
 using Microsoft.UI.Xaml;
 using Microsoft.Windows.AppLifecycle;
 using Microsoft.Windows.AppNotifications;
@@ -6,7 +7,7 @@ using Ahnenforscherin.Services;
 using System.Threading.Tasks;
 using Ahnenforscherin;
 
-namespace Ahnenforsvcherin.Activation;
+namespace Ahnenforscherin.Activation;
 
 public class AppNotificationActivationHandler // : ActivationHandler<LaunchActivatedEventArgs>
 {
