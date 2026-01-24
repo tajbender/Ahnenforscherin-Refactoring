@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<!-- Add Theme Styles here  -->
+<Application.Resources>
+	<ResourceDictionary>
+		<ResourceDictionary.MergedDictionaries>
+
+			<!-- Default Theme -->
+			<ResourceDictionary Source="Themes/Fluent/Colors.xaml" />
+			<ResourceDictionary Source="Themes/Fluent/Icons.xaml" />
+			<ResourceDictionary Source="Themes/Fluent/Styles.xaml" />
+
+		</ResourceDictionary.MergedDictionaries>
+	</ResourceDictionary>
+</Application.Resources>

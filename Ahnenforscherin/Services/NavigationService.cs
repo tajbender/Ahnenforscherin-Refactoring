@@ -1,13 +1,16 @@
-﻿using System.Diagnostics.CodeAnalysis;
-
-using electrifier.Contracts.Services;
-using electrifier.Contracts.ViewModels;
-using electrifier.Helpers;
+using System.Diagnostics.CodeAnalysis;
+using Microsoft.UI.Xaml;
+using Microsoft.UI.Xaml.Controls;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
 using Microsoft.UI.Xaml.Controls;
 using Microsoft.UI.Xaml.Navigation;
 
-namespace electrifier.Services;
+namespace Ahnenforscherin.Services;
 
 // For more information on navigation between pages see
 // https://github.com/microsoft/TemplateStudio/blob/main/docs/WinUI/navigation.md
@@ -46,6 +49,25 @@ public class NavigationService : INavigationService
     public NavigationService(IPageService pageService)
     {
         _pageService = pageService;
+      
+    /*
+    // incoming from electrifier:  
+    private Window _window;
+    private Frame _frame;
+
+    public Window CreateMainWindow()
+    {
+        _frame = new Frame();
+        _window = new MainWindow { Content = _frame };
+        return _window;
+    }
+
+    public void Navigate<TPage>() where TPage : Page
+    {
+        _frame.Navigate(typeof(TPage));
+    }
+    */
+    
     }
 
     private void RegisterFrameEvents()

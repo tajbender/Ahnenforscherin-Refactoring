@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
     <TargetFramework>net8.0-windows10.0.19041.0</TargetFramework>
@@ -13,6 +13,17 @@
     <EnableMsixTooling>true</EnableMsixTooling>
     <Nullable>enable</Nullable>
   </PropertyGroup>
+  <ItemGroup>
+    <None Remove="Themes\Colors.xaml" />
+    <None Remove="Views\SettingsPage.xaml" />
+    <None Remove="Views\WorkbenchPage.xaml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Remove="Styles\App.xaml" />
+    <Page Remove="Themes\Fluent\Icons.xaml" />
+    <Page Remove="Themes\Indy\Icons.xaml" />
+    <Page Remove="Themes\Material\Icons.xaml" />
+  </ItemGroup>
 
   <ItemGroup>
     <Content Include="Assets\SplashScreen.scale-200.png" />
@@ -37,10 +48,47 @@
     <ProjectCapability Include="Msix" />
   </ItemGroup>
   <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="9.0.9" />
     <PackageReference Include="Microsoft.Windows.SDK.BuildTools" Version="10.0.26100.7463" />
     <PackageReference Include="Microsoft.WindowsAppSDK" Version="1.8.260101001" />
   </ItemGroup>
-
+  <ItemGroup>
+    <Page Update="Views\WorkbenchPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="Views\SettingsPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Assets\Icons\Ahnenforscherin\UI\" />
+    <Folder Include="Assets\Icons\Ahnenforscherin\Workbench\" />
+    <Folder Include="Assets\Icons\Fluent\Filled\" />
+    <Folder Include="Assets\Icons\Fluent\Regular\" />
+    <Folder Include="Assets\Icons\Material\Filled\" />
+    <Folder Include="Assets\Icons\Material\Outlined\" />
+    <Folder Include="Data\Migrations\" />
+  </ItemGroup>
+	  <ItemGroup>
+		  <!-- Enables the TextTemplatingFileGenerator (T4) service in Visual Studio for transforming .tt templates. -->
+		  <Service Include="{508349b6-6b84-4df5-91f0-309beebad82d}" />
+  </ItemGroup>
+	  <ItemGroup>
+	    <None Update="Styles\App.xaml">
+	      <Generator>MSBuild:Compile</Generator>
+	    </None>
+	    <None Update="Themes\Fluent\Icons.xaml">
+	      <Generator>MSBuild:Compile</Generator>
+	    </None>
+	    <None Update="Themes\Indy\Icons.xaml">
+	      <Generator>MSBuild:Compile</Generator>
+	    </None>
+	    <None Update="Themes\Material\Icons.xaml">
+	      <Generator>MSBuild:Compile</Generator>
+	    </None>
+	  </ItemGroup>
   <!--
     Defining the "HasPackageAndPublishMenuAddedByProject" property here allows the Solution
     Explorer "Package and Publish" context menu entry to be enabled for this project even if
@@ -49,12 +97,12 @@
   <PropertyGroup Condition="'$(DisableHasPackageAndPublishMenuAddedByProject)'!='true' and '$(EnableMsixTooling)'=='true'">
     <HasPackageAndPublishMenu>true</HasPackageAndPublishMenu>
   </PropertyGroup>
-
   <!-- Publish Properties -->
   <PropertyGroup>
     <PublishReadyToRun Condition="'$(Configuration)' == 'Debug'">False</PublishReadyToRun>
     <PublishReadyToRun Condition="'$(Configuration)' != 'Debug'">True</PublishReadyToRun>
     <PublishTrimmed Condition="'$(Configuration)' == 'Debug'">False</PublishTrimmed>
     <PublishTrimmed Condition="'$(Configuration)' != 'Debug'">True</PublishTrimmed>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
   </PropertyGroup>
 </Project>

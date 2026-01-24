@@ -15,36 +15,43 @@ using Windows.ApplicationModel;
 using Windows.ApplicationModel.Activation;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
+using Ahnenforscherin.Services;
 
 // To learn more about WinUI, the WinUI project structure,
 // and more about our project templates, see: http://aka.ms/winui-project-info.
 
-namespace Ahnenforscherin
+namespace Ahnenforscherin;
+
+/// <summary>
+/// Provides application-specific behavior to supplement the default Application class.
+/// </summary>
+public partial class App : Application
 {
+    private Window? _window;
+    public static AppHost Host { get; private set; }
+
+
+
     /// <summary>
-    /// Provides application-specific behavior to supplement the default Application class.
+    /// Initializes the singleton application object.  This is the first line of authored code
+    /// executed, and as such is the logical equivalent of main() or WinMain().
     /// </summary>
-    public partial class App : Application
+    public App()
     {
-        private Window? _window;
+        InitializeComponent();
+        Host = new AppHost();
+    }
 
-        /// <summary>
-        /// Initializes the singleton application object.  This is the first line of authored code
-        /// executed, and as such is the logical equivalent of main() or WinMain().
-        /// </summary>
-        public App()
-        {
-            InitializeComponent();
-        }
+    /// <summary>
+    /// Invoked when the application is launched.
+    /// </summary>
+    /// <param name="args">Details about the launch request and process.</param>
+    protected override async void OnLaunched(Microsoft.UI.Xaml.LaunchActivatedEventArgs args)
+    {
+        await Host.InitializeAsync();
+        // TODO: Error: IServiceProvider?: var navigationService = Host.Services.GetRequiredService<NavigationService>();
 
-        /// <summary>
-        /// Invoked when the application is launched.
-        /// </summary>
-        /// <param name="args">Details about the launch request and process.</param>
-        protected override void OnLaunched(Microsoft.UI.Xaml.LaunchActivatedEventArgs args)
-        {
-            _window = new MainWindow();
-            _window.Activate();
-        }
+        _window = new MainWindow();
+        _window.Activate();
     }
 }

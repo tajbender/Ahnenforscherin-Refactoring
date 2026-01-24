@@ -9,6 +9,8 @@
             <ResourceDictionary.MergedDictionaries>
                 <XamlControlsResources xmlns="using:Microsoft.UI.Xaml.Controls" />
                 <!-- Other merged dictionaries here -->
+                <ResourceDictionary Source="Themes/Colors.xaml" />
+                <!-- TODO: Add Themes/Colors.xaml -->
             </ResourceDictionary.MergedDictionaries>
             <!-- Other app resources here -->
         </ResourceDictionary>
