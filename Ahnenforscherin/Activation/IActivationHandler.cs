@@ -1,4 +1,4 @@
-﻿namespace electrifier.Activation;
+﻿namespace Ahnenforscherin.Activation;
 
 public interface IActivationHandler
 {
