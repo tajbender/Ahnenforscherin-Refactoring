@@ -1,4 +1,8 @@
-﻿namespace electrifier.Contracts.Services;
+﻿using System.Threading.Tasks;
+
+
+
+namespace electrifier.Contracts.Services;
 
 public interface IActivationService
 {

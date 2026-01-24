@@ -1,9 +1,9 @@
-﻿using electrifier.Contracts.Services;
-using electrifier.Helpers;
-
+﻿using CommunityToolkit.WinUI;
 using Microsoft.UI.Xaml;
+using System;
+using System.Threading.Tasks;
 
-namespace electrifier.Services;
+namespace Ahnenforscherin.Services;
 
 public class ThemeSelectorService : IThemeSelectorService
 {
@@ -60,4 +60,8 @@ public class ThemeSelectorService : IThemeSelectorService
     {
         await _localSettingsService.SaveSettingAsync(SettingsKey, theme.ToString());
     }
+}
+
+internal interface ILocalSettingsService
+{
 }

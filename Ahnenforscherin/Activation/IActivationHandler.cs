@@ -1,4 +1,6 @@
-﻿namespace electrifier.Activation;
+﻿using System.Threading.Tasks;
+
+namespace electrifier.Activation;
 
 public interface IActivationHandler
 {

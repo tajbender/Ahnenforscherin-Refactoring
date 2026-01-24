@@ -1,5 +1,4 @@
-﻿using electrifier.Contracts.Services;
-using electrifier.ViewModels;
+﻿using System.Threading.Tasks;
 
 using Microsoft.UI.Xaml;
 

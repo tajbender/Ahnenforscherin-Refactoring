@@ -69,7 +69,6 @@
     <Folder Include="Assets\Icons\Fluent\Regular\" />
     <Folder Include="Assets\Icons\Material\Filled\" />
     <Folder Include="Assets\Icons\Material\Outlined\" />
-    <Folder Include="Data\Migrations\" />
   </ItemGroup>
 	  <ItemGroup>
 		  <!-- Enables the TextTemplatingFileGenerator (T4) service in Visual Studio for transforming .tt templates. -->
