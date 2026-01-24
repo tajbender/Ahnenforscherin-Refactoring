@@ -1,4 +1,5 @@
 ﻿using Microsoft.UI.Xaml.Controls;
+using System.Collections.Generic;
 
 namespace electrifier.Contracts.Services;
 

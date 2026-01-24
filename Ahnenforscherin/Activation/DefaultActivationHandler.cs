@@ -1,9 +1,10 @@
-﻿using electrifier.Contracts.Services;
-using electrifier.ViewModels;
+﻿using Ahnenforscherin.Activation;
+using Ahnenforscherin.Services;
+using Ahnenforscherin.ViewModels;
 
 using Microsoft.UI.Xaml;
 
-namespace electrifier.Activation;
+namespace Ahnenforscherin.Activation;
 
 public class DefaultActivationHandler : ActivationHandler<LaunchActivatedEventArgs>
 {
