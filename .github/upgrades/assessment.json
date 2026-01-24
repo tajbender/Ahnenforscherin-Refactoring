@@ -1,0 +1,1422 @@
+{
+  "settings": {
+    "components": {
+      "code": false,
+      "binaries": false
+    },
+    "targetId": "net10.0",
+    "targetDisplayName": ".NETCoreApp,Version=v10.0"
+  },
+  "analysisStartTime": "2026-01-24T15:50:44.443132Z",
+  "analysisEndTime": "2026-01-24T15:50:46.4191574Z",
+  "privacyModeHelpUrl": "https://go.microsoft.com/fwlink/?linkid=2270980",
+  "stats": {
+    "summary": {
+      "projects": 1,
+      "issues": 4,
+      "incidents": 51,
+      "effort": 51
+    },
+    "charts": {
+      "severity": {
+        "Mandatory": 1,
+        "Optional": 0,
+        "Potential": 50,
+        "Information": 0
+      },
+      "category": {
+        "NuGet": 1,
+        "Project": 1,
+        "Api": 49
+      }
+    }
+  },
+  "projects": [
+    {
+      "path": "Ahnenforscherin\\Ahnenforscherin.csproj",
+      "startingProject": true,
+      "issues": 4,
+      "storyPoints": 51,
+      "properties": {
+        "appName": "Ahnenforscherin",
+        "projectKind": "WinForms",
+        "frameworks": [
+          "net8.0-windows10.0.19041.0"
+        ],
+        "languages": [
+          "C#"
+        ],
+        "tools": [
+          "MSBuild"
+        ],
+        "isSdkStyle": true,
+        "numberOfFiles": 80,
+        "numberOfCodeFiles": 66,
+        "linesTotal": 3313,
+        "linesOfCode": 2713,
+        "totalApiScanned": 2221,
+        "minLinesOfCodeToChange": 49,
+        "maxLinesOfCodeToChange": 49
+      },
+      "ruleInstances": [
+        {
+          "incidentId": "820aed29-7c56-4438-94c5-a14f2f488f5c",
+          "ruleId": "NuGet.0002",
+          "projectPath": "Ahnenforscherin\\Ahnenforscherin.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Microsoft.EntityFrameworkCore, 9.0.9\n\nRecommendation:\n\nRemove Microsoft.EntityFrameworkCore, and replace with new package Microsoft.EntityFrameworkCore 10.0.2",
+              "protected": "Microsoft.EntityFrameworkCore, 9.0.9\n\nRecommendation:\n\nRemove Microsoft.EntityFrameworkCore, and replace with new package Microsoft.EntityFrameworkCore 10.0.2"
+            },
+            "kind": "File",
+            "path": "Ahnenforscherin\\Ahnenforscherin.csproj",
+            "snippet": "Microsoft.EntityFrameworkCore, 9.0.9\n\nRecommendation:\n\nRemove Microsoft.EntityFrameworkCore, and replace with new package Microsoft.EntityFrameworkCore 10.0.2",
+            "protectedSnippet": "Microsoft.EntityFrameworkCore, 9.0.9\n\nRecommendation:\n\nRemove Microsoft.EntityFrameworkCore, and replace with new package Microsoft.EntityFrameworkCore 10.0.2",
+            "label": "Microsoft.EntityFrameworkCore 9.0.9",
+            "properties": {
+              "PackageId": "Microsoft.EntityFrameworkCore",
+              "PackageVersion": "9.0.9",
+              "PackageNewVersion": "10.0.2",
+              "PackageReplacements": null
+            }
+          }
+        },
+        {
+          "incidentId": "d6886722-3534-4892-b5b5-a59061a86550",
+          "ruleId": "Project.0002",
+          "projectPath": "Ahnenforscherin\\Ahnenforscherin.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Current target framework: net8.0-windows10.0.19041.0\nRecommended target framework: net10.0-windows10.0.22000.0",
+              "protected": "Current target framework: net8.0-windows10.0.19041.0\nRecommended target framework: net10.0-windows10.0.22000.0"
+            },
+            "kind": "File",
+            "path": "Ahnenforscherin\\Ahnenforscherin.csproj",
+            "snippet": "Current target framework: net8.0-windows10.0.19041.0\nRecommended target framework: net10.0-windows10.0.22000.0",
+            "protectedSnippet": "Current target framework: net8.0-windows10.0.19041.0\nRecommended target framework: net10.0-windows10.0.22000.0",
+            "properties": {
+              "CurrentTargetFramework": "net8.0-windows10.0.19041.0",
+              "RecommendedTargetFramework": "net10.0-windows10.0.22000.0"
+            }
+          }
+        },
+        {
+          "incidentId": "cb0c3468-729e-4530-860c-9d6eeabfa9eb",
+          "ruleId": "Api.0002",
+          "description": "API is available in package System.Runtime.WindowsRuntime, 4.7.0. Add package reference to System.Runtime.WindowsRuntime, 4.7.0",
+          "projectPath": "Ahnenforscherin\\Ahnenforscherin.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "App.MainWindow.AppWindow.TitleBar.BackgroundColor = Colors.Transparent;",
+              "protected": "T:Windows.UI.Color"
+            },
+            "kind": "File",
+            "path": "Ahnenforscherin\\Helpers\\TitleBarHelper.cs",
+            "snippet": "App.MainWindow.AppWindow.TitleBar.BackgroundColor = Colors.Transparent;",
+            "protectedSnippet": "T:Windows.UI.Color",
+            "label": "T:Windows.UI.Color",
+            "properties": {
+              "PackageId": "System.Runtime.WindowsRuntime",
+              "PackageNewVersion": "4.7.0"
+            },
+            "line": 71,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "fe77e83b-1731-48a0-b389-e8b1abcb49d4",
+          "ruleId": "Api.0002",
+          "description": "API is available in package System.Runtime.WindowsRuntime, 4.7.0. Add package reference to System.Runtime.WindowsRuntime, 4.7.0",
+          "projectPath": "Ahnenforscherin\\Ahnenforscherin.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "App.MainWindow.AppWindow.TitleBar.ButtonPressedBackgroundColor = theme switch\r\n            {\r\n                ElementTheme.Dark =\u003E Color.FromArgb(0x66, 0xFF, 0xFF, 0xFF),\r\n                ElementTheme.Light =\u003E Color.FromArgb(0x66, 0x00, 0x00, 0x00),\r\n                _ =\u003E Colors.Transparent\r\n            };",
+              "protected": "T:Windows.UI.Color"
+            },
+            "kind": "File",
+            "path": "Ahnenforscherin\\Helpers\\TitleBarHelper.cs",
+            "snippet": "App.MainWindow.AppWindow.TitleBar.ButtonPressedBackgroundColor = theme switch\r\n            {\r\n                ElementTheme.Dark =\u003E Color.FromArgb(0x66, 0xFF, 0xFF, 0xFF),\r\n                ElementTheme.Light =\u003E Color.FromArgb(0x66, 0x00, 0x00, 0x00),\r\n                _ =\u003E Colors.Transparent\r\n            };",
+            "protectedSnippet": "T:Windows.UI.Color",
+            "label": "T:Windows.UI.Color",
+            "properties": {
+              "PackageId": "System.Runtime.WindowsRuntime",
+              "PackageNewVersion": "4.7.0"
+            },
+            "line": 64,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "467dadbc-ada0-4c31-b2f5-3cedf0789a5a",
+          "ruleId": "Api.0002",
+          "description": "API is available in package System.Runtime.WindowsRuntime, 4.7.0. Add package reference to System.Runtime.WindowsRuntime, 4.7.0",
+          "projectPath": "Ahnenforscherin\\Ahnenforscherin.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "App.MainWindow.AppWindow.TitleBar.ButtonPressedBackgroundColor = theme switch\r\n            {\r\n                ElementTheme.Dark =\u003E Color.FromArgb(0x66, 0xFF, 0xFF, 0xFF),\r\n                ElementTheme.Light =\u003E Color.FromArgb(0x66, 0x00, 0x00, 0x00),\r\n                _ =\u003E Colors.Transparent\r\n            };",
+              "protected": "T:Windows.UI.Color"
+            },
+            "kind": "File",
+            "path": "Ahnenforscherin\\Helpers\\TitleBarHelper.cs",
+            "snippet": "App.MainWindow.AppWindow.TitleBar.ButtonPressedBackgroundColor = theme switch\r\n            {\r\n                ElementTheme.Dark =\u003E Color.FromArgb(0x66, 0xFF, 0xFF, 0xFF),\r\n                ElementTheme.Light =\u003E Color.FromArgb(0x66, 0x00, 0x00, 0x00),\r\n                _ =\u003E Colors.Transparent\r\n            };",
+            "protectedSnippet": "T:Windows.UI.Color",
+            "label": "T:Windows.UI.Color",
+            "properties": {
+              "PackageId": "System.Runtime.WindowsRuntime",
+              "PackageNewVersion": "4.7.0"
+            },
+            "line": 64,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "dcefe2ba-05d8-4fd6-9f48-352602267198",
+          "ruleId": "Api.0002",
+          "description": "API is available in package System.Runtime.WindowsRuntime, 4.7.0. Add package reference to System.Runtime.WindowsRuntime, 4.7.0",
+          "projectPath": "Ahnenforscherin\\Ahnenforscherin.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "App.MainWindow.AppWindow.TitleBar.ButtonPressedBackgroundColor = theme switch\r\n            {\r\n                ElementTheme.Dark =\u003E Color.FromArgb(0x66, 0xFF, 0xFF, 0xFF),\r\n                ElementTheme.Light =\u003E Color.FromArgb(0x66, 0x00, 0x00, 0x00),\r\n                _ =\u003E Colors.Transparent\r\n            };",
+              "protected": "T:Windows.UI.Color"
+            },
+            "kind": "File",
+            "path": "Ahnenforscherin\\Helpers\\TitleBarHelper.cs",
+            "snippet": "App.MainWindow.AppWindow.TitleBar.ButtonPressedBackgroundColor = theme switch\r\n            {\r\n                ElementTheme.Dark =\u003E Color.FromArgb(0x66, 0xFF, 0xFF, 0xFF),\r\n                ElementTheme.Light =\u003E Color.FromArgb(0x66, 0x00, 0x00, 0x00),\r\n                _ =\u003E Colors.Transparent\r\n            };",
+            "protectedSnippet": "T:Windows.UI.Color",
+            "label": "T:Windows.UI.Color",
+            "properties": {
+              "PackageId": "System.Runtime.WindowsRuntime",
+              "PackageNewVersion": "4.7.0"
+            },
+            "line": 64,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "c746f741-d11b-4e7c-8137-d1abde022eb1",
+          "ruleId": "Api.0002",
+          "description": "API is available in package System.Runtime.WindowsRuntime, 4.7.0. Add package reference to System.Runtime.WindowsRuntime, 4.7.0",
+          "projectPath": "Ahnenforscherin\\Ahnenforscherin.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "App.MainWindow.AppWindow.TitleBar.ButtonPressedBackgroundColor = theme switch\r\n            {\r\n                ElementTheme.Dark =\u003E Color.FromArgb(0x66, 0xFF, 0xFF, 0xFF),\r\n                ElementTheme.Light =\u003E Color.FromArgb(0x66, 0x00, 0x00, 0x00),\r\n                _ =\u003E Colors.Transparent\r\n            };",
+              "protected": "M:Windows.UI.Color.FromArgb(System.Byte,System.Byte,System.Byte,System.Byte)"
+            },
+            "kind": "File",
+            "path": "Ahnenforscherin\\Helpers\\TitleBarHelper.cs",
+            "snippet": "App.MainWindow.AppWindow.TitleBar.ButtonPressedBackgroundColor = theme switch\r\n            {\r\n                ElementTheme.Dark =\u003E Color.FromArgb(0x66, 0xFF, 0xFF, 0xFF),\r\n                ElementTheme.Light =\u003E Color.FromArgb(0x66, 0x00, 0x00, 0x00),\r\n                _ =\u003E Colors.Transparent\r\n            };",
+            "protectedSnippet": "M:Windows.UI.Color.FromArgb(System.Byte,System.Byte,System.Byte,System.Byte)",
+            "label": "M:Windows.UI.Color.FromArgb(System.Byte,System.Byte,System.Byte,System.Byte)",
+            "properties": {
+              "PackageId": "System.Runtime.WindowsRuntime",
+              "PackageNewVersion": "4.7.0"
+            },
+            "line": 64,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "f6fb10f9-2bf6-420f-8bea-b8d450f27122",
+          "ruleId": "Api.0002",
+          "description": "API is available in package System.Runtime.WindowsRuntime, 4.7.0. Add package reference to System.Runtime.WindowsRuntime, 4.7.0",
+          "projectPath": "Ahnenforscherin\\Ahnenforscherin.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "App.MainWindow.AppWindow.TitleBar.ButtonPressedBackgroundColor = theme switch\r\n            {\r\n                ElementTheme.Dark =\u003E Color.FromArgb(0x66, 0xFF, 0xFF, 0xFF),\r\n                ElementTheme.Light =\u003E Color.FromArgb(0x66, 0x00, 0x00, 0x00),\r\n                _ =\u003E Colors.Transparent\r\n            };",
+              "protected": "T:Windows.UI.Color"
+            },
+            "kind": "File",
+            "path": "Ahnenforscherin\\Helpers\\TitleBarHelper.cs",
+            "snippet": "App.MainWindow.AppWindow.TitleBar.ButtonPressedBackgroundColor = theme switch\r\n            {\r\n                ElementTheme.Dark =\u003E Color.FromArgb(0x66, 0xFF, 0xFF, 0xFF),\r\n                ElementTheme.Light =\u003E Color.FromArgb(0x66, 0x00, 0x00, 0x00),\r\n                _ =\u003E Colors.Transparent\r\n            };",
+            "protectedSnippet": "T:Windows.UI.Color",
+            "label": "T:Windows.UI.Color",
+            "properties": {
+              "PackageId": "System.Runtime.WindowsRuntime",
+              "PackageNewVersion": "4.7.0"
+            },
+            "line": 64,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "7352e514-d64e-4825-bc89-adf736c4f383",
+          "ruleId": "Api.0002",
+          "description": "API is available in package System.Runtime.WindowsRuntime, 4.7.0. Add package reference to System.Runtime.WindowsRuntime, 4.7.0",
+          "projectPath": "Ahnenforscherin\\Ahnenforscherin.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "App.MainWindow.AppWindow.TitleBar.ButtonPressedBackgroundColor = theme switch\r\n            {\r\n                ElementTheme.Dark =\u003E Color.FromArgb(0x66, 0xFF, 0xFF, 0xFF),\r\n                ElementTheme.Light =\u003E Color.FromArgb(0x66, 0x00, 0x00, 0x00),\r\n                _ =\u003E Colors.Transparent\r\n            };",
+              "protected": "T:Windows.UI.Color"
+            },
+            "kind": "File",
+            "path": "Ahnenforscherin\\Helpers\\TitleBarHelper.cs",
+            "snippet": "App.MainWindow.AppWindow.TitleBar.ButtonPressedBackgroundColor = theme switch\r\n            {\r\n                ElementTheme.Dark =\u003E Color.FromArgb(0x66, 0xFF, 0xFF, 0xFF),\r\n                ElementTheme.Light =\u003E Color.FromArgb(0x66, 0x00, 0x00, 0x00),\r\n                _ =\u003E Colors.Transparent\r\n            };",
+            "protectedSnippet": "T:Windows.UI.Color",
+            "label": "T:Windows.UI.Color",
+            "properties": {
+              "PackageId": "System.Runtime.WindowsRuntime",
+              "PackageNewVersion": "4.7.0"
+            },
+            "line": 64,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "9812f371-6d2e-4751-9e8c-ef458cd546fd",
+          "ruleId": "Api.0002",
+          "description": "API is available in package System.Runtime.WindowsRuntime, 4.7.0. Add package reference to System.Runtime.WindowsRuntime, 4.7.0",
+          "projectPath": "Ahnenforscherin\\Ahnenforscherin.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "App.MainWindow.AppWindow.TitleBar.ButtonPressedBackgroundColor = theme switch\r\n            {\r\n                ElementTheme.Dark =\u003E Color.FromArgb(0x66, 0xFF, 0xFF, 0xFF),\r\n                ElementTheme.Light =\u003E Color.FromArgb(0x66, 0x00, 0x00, 0x00),\r\n                _ =\u003E Colors.Transparent\r\n            };",
+              "protected": "M:Windows.UI.Color.FromArgb(System.Byte,System.Byte,System.Byte,System.Byte)"
+            },
+            "kind": "File",
+            "path": "Ahnenforscherin\\Helpers\\TitleBarHelper.cs",
+            "snippet": "App.MainWindow.AppWindow.TitleBar.ButtonPressedBackgroundColor = theme switch\r\n            {\r\n                ElementTheme.Dark =\u003E Color.FromArgb(0x66, 0xFF, 0xFF, 0xFF),\r\n                ElementTheme.Light =\u003E Color.FromArgb(0x66, 0x00, 0x00, 0x00),\r\n                _ =\u003E Colors.Transparent\r\n            };",
+            "protectedSnippet": "M:Windows.UI.Color.FromArgb(System.Byte,System.Byte,System.Byte,System.Byte)",
+            "label": "M:Windows.UI.Color.FromArgb(System.Byte,System.Byte,System.Byte,System.Byte)",
+            "properties": {
+              "PackageId": "System.Runtime.WindowsRuntime",
+              "PackageNewVersion": "4.7.0"
+            },
+            "line": 64,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "ca144930-73cc-44e5-8824-cb6dd4156137",
+          "ruleId": "Api.0002",
+          "description": "API is available in package System.Runtime.WindowsRuntime, 4.7.0. Add package reference to System.Runtime.WindowsRuntime, 4.7.0",
+          "projectPath": "Ahnenforscherin\\Ahnenforscherin.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "App.MainWindow.AppWindow.TitleBar.ButtonHoverBackgroundColor = theme switch\r\n            {\r\n                ElementTheme.Dark =\u003E Color.FromArgb(0x33, 0xFF, 0xFF, 0xFF),\r\n                ElementTheme.Light =\u003E Color.FromArgb(0x33, 0x00, 0x00, 0x00),\r\n                _ =\u003E Colors.Transparent\r\n            };",
+              "protected": "T:Windows.UI.Color"
+            },
+            "kind": "File",
+            "path": "Ahnenforscherin\\Helpers\\TitleBarHelper.cs",
+            "snippet": "App.MainWindow.AppWindow.TitleBar.ButtonHoverBackgroundColor = theme switch\r\n            {\r\n                ElementTheme.Dark =\u003E Color.FromArgb(0x33, 0xFF, 0xFF, 0xFF),\r\n                ElementTheme.Light =\u003E Color.FromArgb(0x33, 0x00, 0x00, 0x00),\r\n                _ =\u003E Colors.Transparent\r\n            };",
+            "protectedSnippet": "T:Windows.UI.Color",
+            "label": "T:Windows.UI.Color",
+            "properties": {
+              "PackageId": "System.Runtime.WindowsRuntime",
+              "PackageNewVersion": "4.7.0"
+            },
+            "line": 57,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "cd2985fa-46fd-4a72-b396-70806da03aa6",
+          "ruleId": "Api.0002",
+          "description": "API is available in package System.Runtime.WindowsRuntime, 4.7.0. Add package reference to System.Runtime.WindowsRuntime, 4.7.0",
+          "projectPath": "Ahnenforscherin\\Ahnenforscherin.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "App.MainWindow.AppWindow.TitleBar.ButtonHoverBackgroundColor = theme switch\r\n            {\r\n                ElementTheme.Dark =\u003E Color.FromArgb(0x33, 0xFF, 0xFF, 0xFF),\r\n                ElementTheme.Light =\u003E Color.FromArgb(0x33, 0x00, 0x00, 0x00),\r\n                _ =\u003E Colors.Transparent\r\n            };",
+              "protected": "T:Windows.UI.Color"
+            },
+            "kind": "File",
+            "path": "Ahnenforscherin\\Helpers\\TitleBarHelper.cs",
+            "snippet": "App.MainWindow.AppWindow.TitleBar.ButtonHoverBackgroundColor = theme switch\r\n            {\r\n                ElementTheme.Dark =\u003E Color.FromArgb(0x33, 0xFF, 0xFF, 0xFF),\r\n                ElementTheme.Light =\u003E Color.FromArgb(0x33, 0x00, 0x00, 0x00),\r\n                _ =\u003E Colors.Transparent\r\n            };",
+            "protectedSnippet": "T:Windows.UI.Color",
+            "label": "T:Windows.UI.Color",
+            "properties": {
+              "PackageId": "System.Runtime.WindowsRuntime",
+              "PackageNewVersion": "4.7.0"
+            },
+            "line": 57,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "118b33c0-1307-4302-95a1-698f1beb87e5",
+          "ruleId": "Api.0002",
+          "description": "API is available in package System.Runtime.WindowsRuntime, 4.7.0. Add package reference to System.Runtime.WindowsRuntime, 4.7.0",
+          "projectPath": "Ahnenforscherin\\Ahnenforscherin.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "App.MainWindow.AppWindow.TitleBar.ButtonHoverBackgroundColor = theme switch\r\n            {\r\n                ElementTheme.Dark =\u003E Color.FromArgb(0x33, 0xFF, 0xFF, 0xFF),\r\n                ElementTheme.Light =\u003E Color.FromArgb(0x33, 0x00, 0x00, 0x00),\r\n                _ =\u003E Colors.Transparent\r\n            };",
+              "protected": "T:Windows.UI.Color"
+            },
+            "kind": "File",
+            "path": "Ahnenforscherin\\Helpers\\TitleBarHelper.cs",
+            "snippet": "App.MainWindow.AppWindow.TitleBar.ButtonHoverBackgroundColor = theme switch\r\n            {\r\n                ElementTheme.Dark =\u003E Color.FromArgb(0x33, 0xFF, 0xFF, 0xFF),\r\n                ElementTheme.Light =\u003E Color.FromArgb(0x33, 0x00, 0x00, 0x00),\r\n                _ =\u003E Colors.Transparent\r\n            };",
+            "protectedSnippet": "T:Windows.UI.Color",
+            "label": "T:Windows.UI.Color",
+            "properties": {
+              "PackageId": "System.Runtime.WindowsRuntime",
+              "PackageNewVersion": "4.7.0"
+            },
+            "line": 57,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "71180d19-dfc6-4856-a938-4d1b9a40170a",
+          "ruleId": "Api.0002",
+          "description": "API is available in package System.Runtime.WindowsRuntime, 4.7.0. Add package reference to System.Runtime.WindowsRuntime, 4.7.0",
+          "projectPath": "Ahnenforscherin\\Ahnenforscherin.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "App.MainWindow.AppWindow.TitleBar.ButtonHoverBackgroundColor = theme switch\r\n            {\r\n                ElementTheme.Dark =\u003E Color.FromArgb(0x33, 0xFF, 0xFF, 0xFF),\r\n                ElementTheme.Light =\u003E Color.FromArgb(0x33, 0x00, 0x00, 0x00),\r\n                _ =\u003E Colors.Transparent\r\n            };",
+              "protected": "M:Windows.UI.Color.FromArgb(System.Byte,System.Byte,System.Byte,System.Byte)"
+            },
+            "kind": "File",
+            "path": "Ahnenforscherin\\Helpers\\TitleBarHelper.cs",
+            "snippet": "App.MainWindow.AppWindow.TitleBar.ButtonHoverBackgroundColor = theme switch\r\n            {\r\n                ElementTheme.Dark =\u003E Color.FromArgb(0x33, 0xFF, 0xFF, 0xFF),\r\n                ElementTheme.Light =\u003E Color.FromArgb(0x33, 0x00, 0x00, 0x00),\r\n                _ =\u003E Colors.Transparent\r\n            };",
+            "protectedSnippet": "M:Windows.UI.Color.FromArgb(System.Byte,System.Byte,System.Byte,System.Byte)",
+            "label": "M:Windows.UI.Color.FromArgb(System.Byte,System.Byte,System.Byte,System.Byte)",
+            "properties": {
+              "PackageId": "System.Runtime.WindowsRuntime",
+              "PackageNewVersion": "4.7.0"
+            },
+            "line": 57,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "52be91ba-6bbe-4b96-9df9-6a44bdfa1fca",
+          "ruleId": "Api.0002",
+          "description": "API is available in package System.Runtime.WindowsRuntime, 4.7.0. Add package reference to System.Runtime.WindowsRuntime, 4.7.0",
+          "projectPath": "Ahnenforscherin\\Ahnenforscherin.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "App.MainWindow.AppWindow.TitleBar.ButtonHoverBackgroundColor = theme switch\r\n            {\r\n                ElementTheme.Dark =\u003E Color.FromArgb(0x33, 0xFF, 0xFF, 0xFF),\r\n                ElementTheme.Light =\u003E Color.FromArgb(0x33, 0x00, 0x00, 0x00),\r\n                _ =\u003E Colors.Transparent\r\n            };",
+              "protected": "T:Windows.UI.Color"
+            },
+            "kind": "File",
+            "path": "Ahnenforscherin\\Helpers\\TitleBarHelper.cs",
+            "snippet": "App.MainWindow.AppWindow.TitleBar.ButtonHoverBackgroundColor = theme switch\r\n            {\r\n                ElementTheme.Dark =\u003E Color.FromArgb(0x33, 0xFF, 0xFF, 0xFF),\r\n                ElementTheme.Light =\u003E Color.FromArgb(0x33, 0x00, 0x00, 0x00),\r\n                _ =\u003E Colors.Transparent\r\n            };",
+            "protectedSnippet": "T:Windows.UI.Color",
+            "label": "T:Windows.UI.Color",
+            "properties": {
+              "PackageId": "System.Runtime.WindowsRuntime",
+              "PackageNewVersion": "4.7.0"
+            },
+            "line": 57,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "629f8521-4af3-4872-84ba-2bfeeaa7ea2c",
+          "ruleId": "Api.0002",
+          "description": "API is available in package System.Runtime.WindowsRuntime, 4.7.0. Add package reference to System.Runtime.WindowsRuntime, 4.7.0",
+          "projectPath": "Ahnenforscherin\\Ahnenforscherin.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "App.MainWindow.AppWindow.TitleBar.ButtonHoverBackgroundColor = theme switch\r\n            {\r\n                ElementTheme.Dark =\u003E Color.FromArgb(0x33, 0xFF, 0xFF, 0xFF),\r\n                ElementTheme.Light =\u003E Color.FromArgb(0x33, 0x00, 0x00, 0x00),\r\n                _ =\u003E Colors.Transparent\r\n            };",
+              "protected": "T:Windows.UI.Color"
+            },
+            "kind": "File",
+            "path": "Ahnenforscherin\\Helpers\\TitleBarHelper.cs",
+            "snippet": "App.MainWindow.AppWindow.TitleBar.ButtonHoverBackgroundColor = theme switch\r\n            {\r\n                ElementTheme.Dark =\u003E Color.FromArgb(0x33, 0xFF, 0xFF, 0xFF),\r\n                ElementTheme.Light =\u003E Color.FromArgb(0x33, 0x00, 0x00, 0x00),\r\n                _ =\u003E Colors.Transparent\r\n            };",
+            "protectedSnippet": "T:Windows.UI.Color",
+            "label": "T:Windows.UI.Color",
+            "properties": {
+              "PackageId": "System.Runtime.WindowsRuntime",
+              "PackageNewVersion": "4.7.0"
+            },
+            "line": 57,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "96104e73-1f02-4927-bb00-fc8279ff79d5",
+          "ruleId": "Api.0002",
+          "description": "API is available in package System.Runtime.WindowsRuntime, 4.7.0. Add package reference to System.Runtime.WindowsRuntime, 4.7.0",
+          "projectPath": "Ahnenforscherin\\Ahnenforscherin.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "App.MainWindow.AppWindow.TitleBar.ButtonHoverBackgroundColor = theme switch\r\n            {\r\n                ElementTheme.Dark =\u003E Color.FromArgb(0x33, 0xFF, 0xFF, 0xFF),\r\n                ElementTheme.Light =\u003E Color.FromArgb(0x33, 0x00, 0x00, 0x00),\r\n                _ =\u003E Colors.Transparent\r\n            };",
+              "protected": "M:Windows.UI.Color.FromArgb(System.Byte,System.Byte,System.Byte,System.Byte)"
+            },
+            "kind": "File",
+            "path": "Ahnenforscherin\\Helpers\\TitleBarHelper.cs",
+            "snippet": "App.MainWindow.AppWindow.TitleBar.ButtonHoverBackgroundColor = theme switch\r\n            {\r\n                ElementTheme.Dark =\u003E Color.FromArgb(0x33, 0xFF, 0xFF, 0xFF),\r\n                ElementTheme.Light =\u003E Color.FromArgb(0x33, 0x00, 0x00, 0x00),\r\n                _ =\u003E Colors.Transparent\r\n            };",
+            "protectedSnippet": "M:Windows.UI.Color.FromArgb(System.Byte,System.Byte,System.Byte,System.Byte)",
+            "label": "M:Windows.UI.Color.FromArgb(System.Byte,System.Byte,System.Byte,System.Byte)",
+            "properties": {
+              "PackageId": "System.Runtime.WindowsRuntime",
+              "PackageNewVersion": "4.7.0"
+            },
+            "line": 57,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "0e1bfad3-6025-47b9-88ba-f7fadfeda9e6",
+          "ruleId": "Api.0002",
+          "description": "API is available in package System.Runtime.WindowsRuntime, 4.7.0. Add package reference to System.Runtime.WindowsRuntime, 4.7.0",
+          "projectPath": "Ahnenforscherin\\Ahnenforscherin.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "App.MainWindow.AppWindow.TitleBar.ButtonHoverForegroundColor = theme switch\r\n            {\r\n                ElementTheme.Dark =\u003E Colors.White,\r\n                ElementTheme.Light =\u003E Colors.Black,\r\n                _ =\u003E Colors.Transparent\r\n            };",
+              "protected": "T:Windows.UI.Color"
+            },
+            "kind": "File",
+            "path": "Ahnenforscherin\\Helpers\\TitleBarHelper.cs",
+            "snippet": "App.MainWindow.AppWindow.TitleBar.ButtonHoverForegroundColor = theme switch\r\n            {\r\n                ElementTheme.Dark =\u003E Colors.White,\r\n                ElementTheme.Light =\u003E Colors.Black,\r\n                _ =\u003E Colors.Transparent\r\n            };",
+            "protectedSnippet": "T:Windows.UI.Color",
+            "label": "T:Windows.UI.Color",
+            "properties": {
+              "PackageId": "System.Runtime.WindowsRuntime",
+              "PackageNewVersion": "4.7.0"
+            },
+            "line": 50,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "17e16984-bff3-4c9c-ad1c-bdbd6f2ad23e",
+          "ruleId": "Api.0002",
+          "description": "API is available in package System.Runtime.WindowsRuntime, 4.7.0. Add package reference to System.Runtime.WindowsRuntime, 4.7.0",
+          "projectPath": "Ahnenforscherin\\Ahnenforscherin.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "App.MainWindow.AppWindow.TitleBar.ButtonHoverForegroundColor = theme switch\r\n            {\r\n                ElementTheme.Dark =\u003E Colors.White,\r\n                ElementTheme.Light =\u003E Colors.Black,\r\n                _ =\u003E Colors.Transparent\r\n            };",
+              "protected": "T:Windows.UI.Color"
+            },
+            "kind": "File",
+            "path": "Ahnenforscherin\\Helpers\\TitleBarHelper.cs",
+            "snippet": "App.MainWindow.AppWindow.TitleBar.ButtonHoverForegroundColor = theme switch\r\n            {\r\n                ElementTheme.Dark =\u003E Colors.White,\r\n                ElementTheme.Light =\u003E Colors.Black,\r\n                _ =\u003E Colors.Transparent\r\n            };",
+            "protectedSnippet": "T:Windows.UI.Color",
+            "label": "T:Windows.UI.Color",
+            "properties": {
+              "PackageId": "System.Runtime.WindowsRuntime",
+              "PackageNewVersion": "4.7.0"
+            },
+            "line": 50,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "1d51ce4e-076a-4f4f-891a-a1ac17e4dcfc",
+          "ruleId": "Api.0002",
+          "description": "API is available in package System.Runtime.WindowsRuntime, 4.7.0. Add package reference to System.Runtime.WindowsRuntime, 4.7.0",
+          "projectPath": "Ahnenforscherin\\Ahnenforscherin.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "App.MainWindow.AppWindow.TitleBar.ButtonHoverForegroundColor = theme switch\r\n            {\r\n                ElementTheme.Dark =\u003E Colors.White,\r\n                ElementTheme.Light =\u003E Colors.Black,\r\n                _ =\u003E Colors.Transparent\r\n            };",
+              "protected": "T:Windows.UI.Color"
+            },
+            "kind": "File",
+            "path": "Ahnenforscherin\\Helpers\\TitleBarHelper.cs",
+            "snippet": "App.MainWindow.AppWindow.TitleBar.ButtonHoverForegroundColor = theme switch\r\n            {\r\n                ElementTheme.Dark =\u003E Colors.White,\r\n                ElementTheme.Light =\u003E Colors.Black,\r\n                _ =\u003E Colors.Transparent\r\n            };",
+            "protectedSnippet": "T:Windows.UI.Color",
+            "label": "T:Windows.UI.Color",
+            "properties": {
+              "PackageId": "System.Runtime.WindowsRuntime",
+              "PackageNewVersion": "4.7.0"
+            },
+            "line": 50,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "1ee06200-e779-4699-a666-1c1037eaef9b",
+          "ruleId": "Api.0002",
+          "description": "API is available in package System.Runtime.WindowsRuntime, 4.7.0. Add package reference to System.Runtime.WindowsRuntime, 4.7.0",
+          "projectPath": "Ahnenforscherin\\Ahnenforscherin.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "App.MainWindow.AppWindow.TitleBar.ButtonForegroundColor = theme switch\r\n            {\r\n                ElementTheme.Dark =\u003E Colors.White,\r\n                ElementTheme.Light =\u003E Colors.Black,\r\n                _ =\u003E Colors.Transparent\r\n            };",
+              "protected": "T:Windows.UI.Color"
+            },
+            "kind": "File",
+            "path": "Ahnenforscherin\\Helpers\\TitleBarHelper.cs",
+            "snippet": "App.MainWindow.AppWindow.TitleBar.ButtonForegroundColor = theme switch\r\n            {\r\n                ElementTheme.Dark =\u003E Colors.White,\r\n                ElementTheme.Light =\u003E Colors.Black,\r\n                _ =\u003E Colors.Transparent\r\n            };",
+            "protectedSnippet": "T:Windows.UI.Color",
+            "label": "T:Windows.UI.Color",
+            "properties": {
+              "PackageId": "System.Runtime.WindowsRuntime",
+              "PackageNewVersion": "4.7.0"
+            },
+            "line": 43,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "f14deb94-d23b-4b7d-8a76-7398b01c14ec",
+          "ruleId": "Api.0002",
+          "description": "API is available in package System.Runtime.WindowsRuntime, 4.7.0. Add package reference to System.Runtime.WindowsRuntime, 4.7.0",
+          "projectPath": "Ahnenforscherin\\Ahnenforscherin.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "App.MainWindow.AppWindow.TitleBar.ButtonForegroundColor = theme switch\r\n            {\r\n                ElementTheme.Dark =\u003E Colors.White,\r\n                ElementTheme.Light =\u003E Colors.Black,\r\n                _ =\u003E Colors.Transparent\r\n            };",
+              "protected": "T:Windows.UI.Color"
+            },
+            "kind": "File",
+            "path": "Ahnenforscherin\\Helpers\\TitleBarHelper.cs",
+            "snippet": "App.MainWindow.AppWindow.TitleBar.ButtonForegroundColor = theme switch\r\n            {\r\n                ElementTheme.Dark =\u003E Colors.White,\r\n                ElementTheme.Light =\u003E Colors.Black,\r\n                _ =\u003E Colors.Transparent\r\n            };",
+            "protectedSnippet": "T:Windows.UI.Color",
+            "label": "T:Windows.UI.Color",
+            "properties": {
+              "PackageId": "System.Runtime.WindowsRuntime",
+              "PackageNewVersion": "4.7.0"
+            },
+            "line": 43,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "ba8eea95-8c8e-4830-8566-2a90ad4898a8",
+          "ruleId": "Api.0002",
+          "description": "API is available in package System.Runtime.WindowsRuntime, 4.7.0. Add package reference to System.Runtime.WindowsRuntime, 4.7.0",
+          "projectPath": "Ahnenforscherin\\Ahnenforscherin.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "App.MainWindow.AppWindow.TitleBar.ButtonForegroundColor = theme switch\r\n            {\r\n                ElementTheme.Dark =\u003E Colors.White,\r\n                ElementTheme.Light =\u003E Colors.Black,\r\n                _ =\u003E Colors.Transparent\r\n            };",
+              "protected": "T:Windows.UI.Color"
+            },
+            "kind": "File",
+            "path": "Ahnenforscherin\\Helpers\\TitleBarHelper.cs",
+            "snippet": "App.MainWindow.AppWindow.TitleBar.ButtonForegroundColor = theme switch\r\n            {\r\n                ElementTheme.Dark =\u003E Colors.White,\r\n                ElementTheme.Light =\u003E Colors.Black,\r\n                _ =\u003E Colors.Transparent\r\n            };",
+            "protectedSnippet": "T:Windows.UI.Color",
+            "label": "T:Windows.UI.Color",
+            "properties": {
+              "PackageId": "System.Runtime.WindowsRuntime",
+              "PackageNewVersion": "4.7.0"
+            },
+            "line": 43,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "a922d91a-aa99-4f87-9472-e3864d551a46",
+          "ruleId": "Api.0002",
+          "description": "API is available in package System.Runtime.WindowsRuntime, 4.7.0. Add package reference to System.Runtime.WindowsRuntime, 4.7.0",
+          "projectPath": "Ahnenforscherin\\Ahnenforscherin.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "theme = background == Colors.White ? ElementTheme.Light : ElementTheme.Dark;",
+              "protected": "T:Windows.UI.Color"
+            },
+            "kind": "File",
+            "path": "Ahnenforscherin\\Helpers\\TitleBarHelper.cs",
+            "snippet": "theme = background == Colors.White ? ElementTheme.Light : ElementTheme.Dark;",
+            "protectedSnippet": "T:Windows.UI.Color",
+            "label": "T:Windows.UI.Color",
+            "properties": {
+              "PackageId": "System.Runtime.WindowsRuntime",
+              "PackageNewVersion": "4.7.0"
+            },
+            "line": 35,
+            "column": 16
+          }
+        },
+        {
+          "incidentId": "8e279dd6-674e-4106-9916-eb150560d389",
+          "ruleId": "Api.0002",
+          "description": "API is available in package System.Runtime.WindowsRuntime, 4.7.0. Add package reference to System.Runtime.WindowsRuntime, 4.7.0",
+          "projectPath": "Ahnenforscherin\\Ahnenforscherin.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "var background = uiSettings.GetColorValue(UIColorType.Background);",
+              "protected": "T:Windows.UI.Color"
+            },
+            "kind": "File",
+            "path": "Ahnenforscherin\\Helpers\\TitleBarHelper.cs",
+            "snippet": "var background = uiSettings.GetColorValue(UIColorType.Background);",
+            "protectedSnippet": "T:Windows.UI.Color",
+            "label": "T:Windows.UI.Color",
+            "properties": {
+              "PackageId": "System.Runtime.WindowsRuntime",
+              "PackageNewVersion": "4.7.0"
+            },
+            "line": 33,
+            "column": 16
+          }
+        },
+        {
+          "incidentId": "fa72f9d8-6eaf-43c1-970b-8c07dd540bae",
+          "ruleId": "Api.0003",
+          "description": "Breaking change: URI length limits removed ",
+          "projectPath": "Ahnenforscherin\\Ahnenforscherin.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": ".Source",
+              "protected": "T:System.Uri"
+            },
+            "kind": "File",
+            "path": "Ahnenforscherin\\Services\\WebViewService.cs",
+            "snippet": ".Source",
+            "protectedSnippet": "T:System.Uri",
+            "label": "T:System.Uri",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://github.com/dotnet/docs/blob/main/docs/core/compatibility/networking/10.0/uri-length-limits-removed.md",
+                "isCustom": false
+              }
+            ],
+            "line": 13,
+            "column": 35
+          }
+        },
+        {
+          "incidentId": "b00beb14-ab3a-42aa-bb20-6408b8379182",
+          "ruleId": "Api.0003",
+          "description": "Breaking change: URI length limits removed ",
+          "projectPath": "Ahnenforscherin\\Ahnenforscherin.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "global::System.Uri resourceLocator = new global::System.Uri(\u0022ms-appx:///Views/WebViewPage.xaml\u0022);",
+              "protected": "T:System.Uri"
+            },
+            "kind": "File",
+            "path": "Ahnenforscherin\\obj\\x64\\Debug\\net8.0-windows10.0.19041.0\\Views\\WebViewPage.g.i.cs",
+            "snippet": "global::System.Uri resourceLocator = new global::System.Uri(\u0022ms-appx:///Views/WebViewPage.xaml\u0022);",
+            "protectedSnippet": "T:System.Uri",
+            "label": "T:System.Uri",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://github.com/dotnet/docs/blob/main/docs/core/compatibility/networking/10.0/uri-length-limits-removed.md",
+                "isCustom": false
+              }
+            ],
+            "line": 39,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "beb6ce96-c44f-46a9-b9e4-1d023762c984",
+          "ruleId": "Api.0003",
+          "description": "Breaking change: URI length limits removed ",
+          "projectPath": "Ahnenforscherin\\Ahnenforscherin.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "global::System.Uri resourceLocator = new global::System.Uri(\u0022ms-appx:///Views/WebViewPage.xaml\u0022);",
+              "protected": "M:System.Uri.#ctor(System.String)"
+            },
+            "kind": "File",
+            "path": "Ahnenforscherin\\obj\\x64\\Debug\\net8.0-windows10.0.19041.0\\Views\\WebViewPage.g.i.cs",
+            "snippet": "global::System.Uri resourceLocator = new global::System.Uri(\u0022ms-appx:///Views/WebViewPage.xaml\u0022);",
+            "protectedSnippet": "M:System.Uri.#ctor(System.String)",
+            "label": "M:System.Uri.#ctor(System.String)",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://github.com/dotnet/docs/blob/main/docs/core/compatibility/networking/10.0/uri-length-limits-removed.md",
+                "isCustom": false
+              }
+            ],
+            "line": 39,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "d5ad2aed-1cb6-4459-9e87-a4b8c3d3c3a1",
+          "ruleId": "Api.0003",
+          "description": "Breaking change: URI length limits removed ",
+          "projectPath": "Ahnenforscherin\\Ahnenforscherin.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "global::System.Uri resourceLocator = new global::System.Uri(\u0022ms-appx:///Views/MainPage.xaml\u0022);",
+              "protected": "T:System.Uri"
+            },
+            "kind": "File",
+            "path": "Ahnenforscherin\\obj\\x64\\Debug\\net8.0-windows10.0.19041.0\\Views\\MainPage.g.i.cs",
+            "snippet": "global::System.Uri resourceLocator = new global::System.Uri(\u0022ms-appx:///Views/MainPage.xaml\u0022);",
+            "protectedSnippet": "T:System.Uri",
+            "label": "T:System.Uri",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://github.com/dotnet/docs/blob/main/docs/core/compatibility/networking/10.0/uri-length-limits-removed.md",
+                "isCustom": false
+              }
+            ],
+            "line": 37,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "c417477d-6703-463e-8ba9-c77cd20c4317",
+          "ruleId": "Api.0003",
+          "description": "Breaking change: URI length limits removed ",
+          "projectPath": "Ahnenforscherin\\Ahnenforscherin.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "global::System.Uri resourceLocator = new global::System.Uri(\u0022ms-appx:///Views/MainPage.xaml\u0022);",
+              "protected": "M:System.Uri.#ctor(System.String)"
+            },
+            "kind": "File",
+            "path": "Ahnenforscherin\\obj\\x64\\Debug\\net8.0-windows10.0.19041.0\\Views\\MainPage.g.i.cs",
+            "snippet": "global::System.Uri resourceLocator = new global::System.Uri(\u0022ms-appx:///Views/MainPage.xaml\u0022);",
+            "protectedSnippet": "M:System.Uri.#ctor(System.String)",
+            "label": "M:System.Uri.#ctor(System.String)",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://github.com/dotnet/docs/blob/main/docs/core/compatibility/networking/10.0/uri-length-limits-removed.md",
+                "isCustom": false
+              }
+            ],
+            "line": 37,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "78ca77f4-05c6-44a7-812b-2a352f0b6c11",
+          "ruleId": "Api.0003",
+          "description": "Breaking change: URI length limits removed ",
+          "projectPath": "Ahnenforscherin\\Ahnenforscherin.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "global::System.Uri resourceLocator = new global::System.Uri(\u0022ms-appx:///Views/ShellPage.xaml\u0022);",
+              "protected": "T:System.Uri"
+            },
+            "kind": "File",
+            "path": "Ahnenforscherin\\obj\\x64\\Debug\\net8.0-windows10.0.19041.0\\Views\\ShellPage.g.i.cs",
+            "snippet": "global::System.Uri resourceLocator = new global::System.Uri(\u0022ms-appx:///Views/ShellPage.xaml\u0022);",
+            "protectedSnippet": "T:System.Uri",
+            "label": "T:System.Uri",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://github.com/dotnet/docs/blob/main/docs/core/compatibility/networking/10.0/uri-length-limits-removed.md",
+                "isCustom": false
+              }
+            ],
+            "line": 45,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "917291ed-7dfd-4141-92e4-cf0e0e6fac41",
+          "ruleId": "Api.0003",
+          "description": "Breaking change: URI length limits removed ",
+          "projectPath": "Ahnenforscherin\\Ahnenforscherin.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "global::System.Uri resourceLocator = new global::System.Uri(\u0022ms-appx:///Views/ShellPage.xaml\u0022);",
+              "protected": "M:System.Uri.#ctor(System.String)"
+            },
+            "kind": "File",
+            "path": "Ahnenforscherin\\obj\\x64\\Debug\\net8.0-windows10.0.19041.0\\Views\\ShellPage.g.i.cs",
+            "snippet": "global::System.Uri resourceLocator = new global::System.Uri(\u0022ms-appx:///Views/ShellPage.xaml\u0022);",
+            "protectedSnippet": "M:System.Uri.#ctor(System.String)",
+            "label": "M:System.Uri.#ctor(System.String)",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://github.com/dotnet/docs/blob/main/docs/core/compatibility/networking/10.0/uri-length-limits-removed.md",
+                "isCustom": false
+              }
+            ],
+            "line": 45,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "1fe8a44a-989c-43ab-8f73-267ee2bab807",
+          "ruleId": "Api.0003",
+          "description": "Breaking change: URI length limits removed ",
+          "projectPath": "Ahnenforscherin\\Ahnenforscherin.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "global::System.Uri resourceLocator = new global::System.Uri(\u0022ms-appx:///Views/FileManagementPage.xaml\u0022);",
+              "protected": "T:System.Uri"
+            },
+            "kind": "File",
+            "path": "Ahnenforscherin\\obj\\x64\\Debug\\net8.0-windows10.0.19041.0\\Views\\FileManagementPage.g.i.cs",
+            "snippet": "global::System.Uri resourceLocator = new global::System.Uri(\u0022ms-appx:///Views/FileManagementPage.xaml\u0022);",
+            "protectedSnippet": "T:System.Uri",
+            "label": "T:System.Uri",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://github.com/dotnet/docs/blob/main/docs/core/compatibility/networking/10.0/uri-length-limits-removed.md",
+                "isCustom": false
+              }
+            ],
+            "line": 37,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "3dea0913-53b1-4ff7-b307-99c919f58c84",
+          "ruleId": "Api.0003",
+          "description": "Breaking change: URI length limits removed ",
+          "projectPath": "Ahnenforscherin\\Ahnenforscherin.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "global::System.Uri resourceLocator = new global::System.Uri(\u0022ms-appx:///Views/FileManagementPage.xaml\u0022);",
+              "protected": "M:System.Uri.#ctor(System.String)"
+            },
+            "kind": "File",
+            "path": "Ahnenforscherin\\obj\\x64\\Debug\\net8.0-windows10.0.19041.0\\Views\\FileManagementPage.g.i.cs",
+            "snippet": "global::System.Uri resourceLocator = new global::System.Uri(\u0022ms-appx:///Views/FileManagementPage.xaml\u0022);",
+            "protectedSnippet": "M:System.Uri.#ctor(System.String)",
+            "label": "M:System.Uri.#ctor(System.String)",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://github.com/dotnet/docs/blob/main/docs/core/compatibility/networking/10.0/uri-length-limits-removed.md",
+                "isCustom": false
+              }
+            ],
+            "line": 37,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "c57c72ba-2c55-4225-9a22-467949b5ab17",
+          "ruleId": "Api.0003",
+          "description": "Breaking change: URI length limits removed ",
+          "projectPath": "Ahnenforscherin\\Ahnenforscherin.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "global::System.Uri resourceLocator = new global::System.Uri(\u0022ms-appx:///Views/SettingsPage.xaml\u0022);",
+              "protected": "T:System.Uri"
+            },
+            "kind": "File",
+            "path": "Ahnenforscherin\\obj\\x64\\Debug\\net8.0-windows10.0.19041.0\\Views\\SettingsPage.g.i.cs",
+            "snippet": "global::System.Uri resourceLocator = new global::System.Uri(\u0022ms-appx:///Views/SettingsPage.xaml\u0022);",
+            "protectedSnippet": "T:System.Uri",
+            "label": "T:System.Uri",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://github.com/dotnet/docs/blob/main/docs/core/compatibility/networking/10.0/uri-length-limits-removed.md",
+                "isCustom": false
+              }
+            ],
+            "line": 37,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "9353a1d2-442d-41cf-b870-cae6546a877a",
+          "ruleId": "Api.0003",
+          "description": "Breaking change: URI length limits removed ",
+          "projectPath": "Ahnenforscherin\\Ahnenforscherin.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "global::System.Uri resourceLocator = new global::System.Uri(\u0022ms-appx:///Views/SettingsPage.xaml\u0022);",
+              "protected": "M:System.Uri.#ctor(System.String)"
+            },
+            "kind": "File",
+            "path": "Ahnenforscherin\\obj\\x64\\Debug\\net8.0-windows10.0.19041.0\\Views\\SettingsPage.g.i.cs",
+            "snippet": "global::System.Uri resourceLocator = new global::System.Uri(\u0022ms-appx:///Views/SettingsPage.xaml\u0022);",
+            "protectedSnippet": "M:System.Uri.#ctor(System.String)",
+            "label": "M:System.Uri.#ctor(System.String)",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://github.com/dotnet/docs/blob/main/docs/core/compatibility/networking/10.0/uri-length-limits-removed.md",
+                "isCustom": false
+              }
+            ],
+            "line": 37,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "ea01c001-0785-453a-a5ef-0498c105d7d0",
+          "ruleId": "Api.0003",
+          "description": "Breaking change: URI length limits removed ",
+          "projectPath": "Ahnenforscherin\\Ahnenforscherin.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "global::System.Uri resourceLocator = new global::System.Uri(\u0022ms-appx:///Views/WorkbenchPage.xaml\u0022);",
+              "protected": "T:System.Uri"
+            },
+            "kind": "File",
+            "path": "Ahnenforscherin\\obj\\x64\\Debug\\net8.0-windows10.0.19041.0\\Views\\WorkbenchPage.g.i.cs",
+            "snippet": "global::System.Uri resourceLocator = new global::System.Uri(\u0022ms-appx:///Views/WorkbenchPage.xaml\u0022);",
+            "protectedSnippet": "T:System.Uri",
+            "label": "T:System.Uri",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://github.com/dotnet/docs/blob/main/docs/core/compatibility/networking/10.0/uri-length-limits-removed.md",
+                "isCustom": false
+              }
+            ],
+            "line": 35,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "0ca7725f-b483-4ba4-ae9f-e99770b9c8ce",
+          "ruleId": "Api.0003",
+          "description": "Breaking change: URI length limits removed ",
+          "projectPath": "Ahnenforscherin\\Ahnenforscherin.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "global::System.Uri resourceLocator = new global::System.Uri(\u0022ms-appx:///Views/WorkbenchPage.xaml\u0022);",
+              "protected": "M:System.Uri.#ctor(System.String)"
+            },
+            "kind": "File",
+            "path": "Ahnenforscherin\\obj\\x64\\Debug\\net8.0-windows10.0.19041.0\\Views\\WorkbenchPage.g.i.cs",
+            "snippet": "global::System.Uri resourceLocator = new global::System.Uri(\u0022ms-appx:///Views/WorkbenchPage.xaml\u0022);",
+            "protectedSnippet": "M:System.Uri.#ctor(System.String)",
+            "label": "M:System.Uri.#ctor(System.String)",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://github.com/dotnet/docs/blob/main/docs/core/compatibility/networking/10.0/uri-length-limits-removed.md",
+                "isCustom": false
+              }
+            ],
+            "line": 35,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "9a2bc1f6-1d2d-428f-9209-fc305b5ffffb",
+          "ruleId": "Api.0003",
+          "description": "Breaking change: URI length limits removed ",
+          "projectPath": "Ahnenforscherin\\Ahnenforscherin.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "dictionaries.Add(new ResourceDictionary { Source = new Uri($\u0022ms-appx:///Themes/{themeName}/Styles.xaml\u0022) });",
+              "protected": "T:System.Uri"
+            },
+            "kind": "File",
+            "path": "Ahnenforscherin\\Services\\ThemeService.cs",
+            "snippet": "dictionaries.Add(new ResourceDictionary { Source = new Uri($\u0022ms-appx:///Themes/{themeName}/Styles.xaml\u0022) });",
+            "protectedSnippet": "T:System.Uri",
+            "label": "T:System.Uri",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://github.com/dotnet/docs/blob/main/docs/core/compatibility/networking/10.0/uri-length-limits-removed.md",
+                "isCustom": false
+              }
+            ],
+            "line": 29,
+            "column": 8
+          }
+        },
+        {
+          "incidentId": "32b42cb5-40aa-4529-b3a4-928f7ebf8020",
+          "ruleId": "Api.0003",
+          "description": "Breaking change: URI length limits removed ",
+          "projectPath": "Ahnenforscherin\\Ahnenforscherin.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "dictionaries.Add(new ResourceDictionary { Source = new Uri($\u0022ms-appx:///Themes/{themeName}/Styles.xaml\u0022) });",
+              "protected": "M:System.Uri.#ctor(System.String)"
+            },
+            "kind": "File",
+            "path": "Ahnenforscherin\\Services\\ThemeService.cs",
+            "snippet": "dictionaries.Add(new ResourceDictionary { Source = new Uri($\u0022ms-appx:///Themes/{themeName}/Styles.xaml\u0022) });",
+            "protectedSnippet": "M:System.Uri.#ctor(System.String)",
+            "label": "M:System.Uri.#ctor(System.String)",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://github.com/dotnet/docs/blob/main/docs/core/compatibility/networking/10.0/uri-length-limits-removed.md",
+                "isCustom": false
+              }
+            ],
+            "line": 29,
+            "column": 8
+          }
+        },
+        {
+          "incidentId": "3355cb84-ce0f-4129-8bc5-ed4cee74077f",
+          "ruleId": "Api.0003",
+          "description": "Breaking change: URI length limits removed ",
+          "projectPath": "Ahnenforscherin\\Ahnenforscherin.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "dictionaries.Add(new ResourceDictionary { Source = new Uri($\u0022ms-appx:///Themes/{themeName}/Styles.xaml\u0022) });",
+              "protected": "T:System.Uri"
+            },
+            "kind": "File",
+            "path": "Ahnenforscherin\\Services\\ThemeService.cs",
+            "snippet": "dictionaries.Add(new ResourceDictionary { Source = new Uri($\u0022ms-appx:///Themes/{themeName}/Styles.xaml\u0022) });",
+            "protectedSnippet": "T:System.Uri",
+            "label": "T:System.Uri",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://github.com/dotnet/docs/blob/main/docs/core/compatibility/networking/10.0/uri-length-limits-removed.md",
+                "isCustom": false
+              }
+            ],
+            "line": 29,
+            "column": 8
+          }
+        },
+        {
+          "incidentId": "73641268-369f-4dc9-8993-1bfbc1822bcb",
+          "ruleId": "Api.0003",
+          "description": "Breaking change: URI length limits removed ",
+          "projectPath": "Ahnenforscherin\\Ahnenforscherin.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "dictionaries.Add(new ResourceDictionary { Source = new Uri($\u0022ms-appx:///Themes/{themeName}/Icons.xaml\u0022) });",
+              "protected": "T:System.Uri"
+            },
+            "kind": "File",
+            "path": "Ahnenforscherin\\Services\\ThemeService.cs",
+            "snippet": "dictionaries.Add(new ResourceDictionary { Source = new Uri($\u0022ms-appx:///Themes/{themeName}/Icons.xaml\u0022) });",
+            "protectedSnippet": "T:System.Uri",
+            "label": "T:System.Uri",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://github.com/dotnet/docs/blob/main/docs/core/compatibility/networking/10.0/uri-length-limits-removed.md",
+                "isCustom": false
+              }
+            ],
+            "line": 28,
+            "column": 8
+          }
+        },
+        {
+          "incidentId": "020f5cb8-d1b8-453f-beba-f8e8cbd1e5cb",
+          "ruleId": "Api.0003",
+          "description": "Breaking change: URI length limits removed ",
+          "projectPath": "Ahnenforscherin\\Ahnenforscherin.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "dictionaries.Add(new ResourceDictionary { Source = new Uri($\u0022ms-appx:///Themes/{themeName}/Icons.xaml\u0022) });",
+              "protected": "M:System.Uri.#ctor(System.String)"
+            },
+            "kind": "File",
+            "path": "Ahnenforscherin\\Services\\ThemeService.cs",
+            "snippet": "dictionaries.Add(new ResourceDictionary { Source = new Uri($\u0022ms-appx:///Themes/{themeName}/Icons.xaml\u0022) });",
+            "protectedSnippet": "M:System.Uri.#ctor(System.String)",
+            "label": "M:System.Uri.#ctor(System.String)",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://github.com/dotnet/docs/blob/main/docs/core/compatibility/networking/10.0/uri-length-limits-removed.md",
+                "isCustom": false
+              }
+            ],
+            "line": 28,
+            "column": 8
+          }
+        },
+        {
+          "incidentId": "5eb63a12-d926-4beb-8c61-a7e9c8bee033",
+          "ruleId": "Api.0003",
+          "description": "Breaking change: URI length limits removed ",
+          "projectPath": "Ahnenforscherin\\Ahnenforscherin.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "dictionaries.Add(new ResourceDictionary { Source = new Uri($\u0022ms-appx:///Themes/{themeName}/Icons.xaml\u0022) });",
+              "protected": "T:System.Uri"
+            },
+            "kind": "File",
+            "path": "Ahnenforscherin\\Services\\ThemeService.cs",
+            "snippet": "dictionaries.Add(new ResourceDictionary { Source = new Uri($\u0022ms-appx:///Themes/{themeName}/Icons.xaml\u0022) });",
+            "protectedSnippet": "T:System.Uri",
+            "label": "T:System.Uri",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://github.com/dotnet/docs/blob/main/docs/core/compatibility/networking/10.0/uri-length-limits-removed.md",
+                "isCustom": false
+              }
+            ],
+            "line": 28,
+            "column": 8
+          }
+        },
+        {
+          "incidentId": "d6643e94-f265-4138-9019-61fcb1e39181",
+          "ruleId": "Api.0003",
+          "description": "Breaking change: URI length limits removed ",
+          "projectPath": "Ahnenforscherin\\Ahnenforscherin.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "dictionaries.Add(new ResourceDictionary { Source = new Uri($\u0022ms-appx:///Themes/{themeName}/Colors.xaml\u0022) });",
+              "protected": "T:System.Uri"
+            },
+            "kind": "File",
+            "path": "Ahnenforscherin\\Services\\ThemeService.cs",
+            "snippet": "dictionaries.Add(new ResourceDictionary { Source = new Uri($\u0022ms-appx:///Themes/{themeName}/Colors.xaml\u0022) });",
+            "protectedSnippet": "T:System.Uri",
+            "label": "T:System.Uri",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://github.com/dotnet/docs/blob/main/docs/core/compatibility/networking/10.0/uri-length-limits-removed.md",
+                "isCustom": false
+              }
+            ],
+            "line": 27,
+            "column": 8
+          }
+        },
+        {
+          "incidentId": "ee819e87-9c10-4f94-b31d-7e6b53d5b71a",
+          "ruleId": "Api.0003",
+          "description": "Breaking change: URI length limits removed ",
+          "projectPath": "Ahnenforscherin\\Ahnenforscherin.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "dictionaries.Add(new ResourceDictionary { Source = new Uri($\u0022ms-appx:///Themes/{themeName}/Colors.xaml\u0022) });",
+              "protected": "M:System.Uri.#ctor(System.String)"
+            },
+            "kind": "File",
+            "path": "Ahnenforscherin\\Services\\ThemeService.cs",
+            "snippet": "dictionaries.Add(new ResourceDictionary { Source = new Uri($\u0022ms-appx:///Themes/{themeName}/Colors.xaml\u0022) });",
+            "protectedSnippet": "M:System.Uri.#ctor(System.String)",
+            "label": "M:System.Uri.#ctor(System.String)",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://github.com/dotnet/docs/blob/main/docs/core/compatibility/networking/10.0/uri-length-limits-removed.md",
+                "isCustom": false
+              }
+            ],
+            "line": 27,
+            "column": 8
+          }
+        },
+        {
+          "incidentId": "467810b0-b6f2-4818-8bf4-1f63f624708a",
+          "ruleId": "Api.0003",
+          "description": "Breaking change: URI length limits removed ",
+          "projectPath": "Ahnenforscherin\\Ahnenforscherin.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "dictionaries.Add(new ResourceDictionary { Source = new Uri($\u0022ms-appx:///Themes/{themeName}/Colors.xaml\u0022) });",
+              "protected": "T:System.Uri"
+            },
+            "kind": "File",
+            "path": "Ahnenforscherin\\Services\\ThemeService.cs",
+            "snippet": "dictionaries.Add(new ResourceDictionary { Source = new Uri($\u0022ms-appx:///Themes/{themeName}/Colors.xaml\u0022) });",
+            "protectedSnippet": "T:System.Uri",
+            "label": "T:System.Uri",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://github.com/dotnet/docs/blob/main/docs/core/compatibility/networking/10.0/uri-length-limits-removed.md",
+                "isCustom": false
+              }
+            ],
+            "line": 27,
+            "column": 8
+          }
+        },
+        {
+          "incidentId": "a7ba75f1-888f-4d79-9b34-e70408430d2a",
+          "ruleId": "Api.0003",
+          "description": "Breaking change: URI length limits removed ",
+          "projectPath": "Ahnenforscherin\\Ahnenforscherin.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "global::System.Uri resourceLocator = new global::System.Uri(\u0022ms-appx:///App.xaml\u0022);",
+              "protected": "T:System.Uri"
+            },
+            "kind": "File",
+            "path": "Ahnenforscherin\\obj\\x64\\Debug\\net8.0-windows10.0.19041.0\\App.g.i.cs",
+            "snippet": "global::System.Uri resourceLocator = new global::System.Uri(\u0022ms-appx:///App.xaml\u0022);",
+            "protectedSnippet": "T:System.Uri",
+            "label": "T:System.Uri",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://github.com/dotnet/docs/blob/main/docs/core/compatibility/networking/10.0/uri-length-limits-removed.md",
+                "isCustom": false
+              }
+            ],
+            "line": 50,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "7525b37b-9369-4926-8676-a191df6d72c1",
+          "ruleId": "Api.0003",
+          "description": "Breaking change: URI length limits removed ",
+          "projectPath": "Ahnenforscherin\\Ahnenforscherin.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "global::System.Uri resourceLocator = new global::System.Uri(\u0022ms-appx:///App.xaml\u0022);",
+              "protected": "M:System.Uri.#ctor(System.String)"
+            },
+            "kind": "File",
+            "path": "Ahnenforscherin\\obj\\x64\\Debug\\net8.0-windows10.0.19041.0\\App.g.i.cs",
+            "snippet": "global::System.Uri resourceLocator = new global::System.Uri(\u0022ms-appx:///App.xaml\u0022);",
+            "protectedSnippet": "M:System.Uri.#ctor(System.String)",
+            "label": "M:System.Uri.#ctor(System.String)",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://github.com/dotnet/docs/blob/main/docs/core/compatibility/networking/10.0/uri-length-limits-removed.md",
+                "isCustom": false
+              }
+            ],
+            "line": 50,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "59e6f541-cfcb-4ac7-9634-b4e8f134f403",
+          "ruleId": "Api.0003",
+          "description": "Breaking change: URI length limits removed ",
+          "projectPath": "Ahnenforscherin\\Ahnenforscherin.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "global::System.Uri resourceLocator = new global::System.Uri(\u0022ms-appx:///MainWindow.xaml\u0022);",
+              "protected": "T:System.Uri"
+            },
+            "kind": "File",
+            "path": "Ahnenforscherin\\obj\\x64\\Debug\\net8.0-windows10.0.19041.0\\MainWindow.g.i.cs",
+            "snippet": "global::System.Uri resourceLocator = new global::System.Uri(\u0022ms-appx:///MainWindow.xaml\u0022);",
+            "protectedSnippet": "T:System.Uri",
+            "label": "T:System.Uri",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://github.com/dotnet/docs/blob/main/docs/core/compatibility/networking/10.0/uri-length-limits-removed.md",
+                "isCustom": false
+              }
+            ],
+            "line": 39,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "5ee93932-b1d9-4fe2-8d65-a9a66f15886a",
+          "ruleId": "Api.0003",
+          "description": "Breaking change: URI length limits removed ",
+          "projectPath": "Ahnenforscherin\\Ahnenforscherin.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "global::System.Uri resourceLocator = new global::System.Uri(\u0022ms-appx:///MainWindow.xaml\u0022);",
+              "protected": "M:System.Uri.#ctor(System.String)"
+            },
+            "kind": "File",
+            "path": "Ahnenforscherin\\obj\\x64\\Debug\\net8.0-windows10.0.19041.0\\MainWindow.g.i.cs",
+            "snippet": "global::System.Uri resourceLocator = new global::System.Uri(\u0022ms-appx:///MainWindow.xaml\u0022);",
+            "protectedSnippet": "M:System.Uri.#ctor(System.String)",
+            "label": "M:System.Uri.#ctor(System.String)",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://github.com/dotnet/docs/blob/main/docs/core/compatibility/networking/10.0/uri-length-limits-removed.md",
+                "isCustom": false
+              }
+            ],
+            "line": 39,
+            "column": 12
+          }
+        }
+      ],
+      "features": []
+    }
+  ],
+  "rules": {
+    "NuGet.0002": {
+      "id": "NuGet.0002",
+      "isFeature": false,
+      "description": "NuGet package upgrade is recommended for selected target framework.\n\nStandard .NET packages are recommended to have versions matching version of .NET that project targets.\n\nSome other packages also are known to work better for selected target frameworks.",
+      "label": "NuGet package upgrade is recommended",
+      "severity": "Potential",
+      "effort": 1,
+      "links": [
+        {
+          "url": "https://go.microsoft.com/fwlink/?linkid=2262530",
+          "isCustom": false
+        }
+      ]
+    },
+    "Project.0002": {
+      "id": "Project.0002",
+      "isFeature": false,
+      "description": "Project\u0027s target framework(s) needs to be changed to the new target framework that you selected for this upgrade.\n\nDuring upgrade target framework will be adjusted to corresponding platform when applicable. In some cases project would result in multiple target frameworks after the upgrade if it was using features that now have their own platforms in modern .NET frameworks (windows, iOS, Android etc).",
+      "label": "Project\u0027s target framework(s) needs to be changed",
+      "severity": "Mandatory",
+      "effort": 1,
+      "links": [
+        {
+          "title": "Overview of porting from .NET Framework to .NET",
+          "url": "https://go.microsoft.com/fwlink/?linkid=2265227",
+          "isCustom": false
+        },
+        {
+          "title": ".NET project SDKs",
+          "url": "https://go.microsoft.com/fwlink/?linkid=2265226",
+          "isCustom": false
+        }
+      ]
+    },
+    "Api.0002": {
+      "id": "Api.0002",
+      "isFeature": false,
+      "description": "API is source incompatible for selected .NET version: requires code changes to compile successfully when targeting a new version, such as removing obsolete APIs or changing method signatures.",
+      "label": "Source incompatible for selected .NET version",
+      "severity": "Potential",
+      "effort": 1,
+      "links": [
+        {
+          "title": "Breaking changes in .NET",
+          "url": "https://go.microsoft.com/fwlink/?linkid=2262679",
+          "isCustom": false
+        }
+      ]
+    },
+    "Api.0003": {
+      "id": "Api.0003",
+      "isFeature": false,
+      "description": "API has a behavioral change in selected .NET version: code and binaries may behave differently at runtime without needing recompilation, but the new behavior might be undesirable and require updates.",
+      "label": "Behavioral change in selected .NET version",
+      "severity": "Potential",
+      "effort": 1
+    }
+  }
+}
