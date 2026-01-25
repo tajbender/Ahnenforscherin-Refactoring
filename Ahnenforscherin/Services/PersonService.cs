@@ -4,9 +4,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Ahnenforscherin.Services
+namespace Ahnenforscherin.Services;
+
+class PersonService
 {
-    class PersonService
+    public void AddPerson()
     {
+
     }
+
+    public void UpdatePerson() { }
+    public void DeletePerson() { }
+    public void GetAll() { }
 }

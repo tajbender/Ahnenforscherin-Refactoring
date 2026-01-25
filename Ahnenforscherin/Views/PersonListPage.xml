@@ -5,16 +5,13 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-	xmlns:models="using:Ahnenforscherin.Core.Models"
+	xmlns:models="using:Ahnenforscherin.Views"
     mc:Ignorable="d">
-
 	<Grid Padding="24">
-
 		<StackPanel Spacing="12">
 			<TextBlock Text="Personenliste"
                        FontSize="32"
                        FontWeight="SemiBold" />
-
 			<ListView ItemsSource="{x:Bind ViewModel.Persons}">
 				<ListView.ItemTemplate>
 					<DataTemplate x:DataType="models:Person">
@@ -28,7 +25,5 @@
 				</ListView.ItemTemplate>
 			</ListView>
 		</StackPanel>
-
 	</Grid>
-
 </Page>

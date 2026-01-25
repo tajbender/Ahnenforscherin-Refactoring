@@ -39,9 +39,9 @@
                   RowDefinitions="Auto,*,Auto">
                 <!-- Header -->
                 <StackPanel>
-                    <Border Grid.Row="3"
+                    <Border Grid.Row="0"
                             Grid.ColumnSpan="3"
-                            Background="#FFEAD7B8"
+                            Background="{StaticResource AfBackgroundAltColor}"
                             Padding="24"
                             CornerRadius="12"
                             Margin="0,0,0,24">
@@ -50,12 +50,12 @@
                             <TextBlock Text="Ahnenforscherin: Workbench"
                                        FontSize="42"
                                        FontWeight="SemiBold"
-                                       Foreground="#FF3B2A1A"
+                                       Foreground="{StaticResource AfTextPrimaryBrush}"
                                        TextWrapping="Wrap" />
                             <!-- TODO: Move to theme: Background, Foreground, ... -->
                             <TextBlock Text="Genealogische Werkbank: Zentrale Aktionen deiner Ahnenforscherin"
                                        FontSize="18"
-                                       Foreground="#FF8C5A24"
+                                       Foreground="{StaticResource AfAccentDarkBrush}"
                                        Margin="0,-4,0,0" />
                         </StackPanel>
                     </Border>
@@ -63,7 +63,7 @@
                 <!-- Main Action Grid -->
                 <Grid Grid.Row="1"
                       ColumnDefinitions="*,*,*"
-                      RowDefinitions="Auto,Auto,Auto,Auto,*"
+                      RowDefinitions="Auto,Auto,Auto,*"
                       ColumnSpacing="24"
                       Margin="0,24,0,24">
                     <!-- Neue Person -->
@@ -74,14 +74,16 @@
                                FontWeight="SemiBold" />
                     <Button Grid.Column="0"
                             Grid.Row="1"
-                            Content="Neue Person anlegen"
-                            Click="CreatePerson_Click"
-                            MinWidth="200" />
+                            Content="Personenliste öffnen..."
+                            Click="OpenPersonList_Click"/>
                     <Button Grid.Column="0"
                             Grid.Row="2"
-                            Content="Personenliste öffnen"
-                            Click="OpenPersonList_Click"
-                            MinWidth="200" />
+                            Content="Neue Person anlegen"
+                            Click="CreatePerson_Click"/>
+                    <ListBox Grid.Column="0"
+                             Grid.Row="3"
+                             HorizontalAlignment="Stretch"
+                             VerticalAlignment="Stretch"/>
                     <!-- Stammbaum -->
                     <TextBlock Grid.Column="1"
                                Grid.Row="0"
@@ -90,14 +92,17 @@
                                FontWeight="SemiBold" />
                     <Button Grid.Column="1"
                             Grid.Row="1"
-                            Content="Stammbaum öffnen"
-                            Click="OpenTree_Click"
-                            MinWidth="200" />
+                            Content="Stammbaum öffnen..."
+                            Click="OpenTree_Click"/>
                     <Button Grid.Column="1"
                             Grid.Row="2"
                             Content="Neu erstellen"
-                            Click="CreateTree_Click"
-                            MinWidth="200" />
+                            Click="CreateTree_Click"/>
+                    <ListBox x:Name="StammbaumListBox"
+                             Grid.Column="1"
+                             Grid.Row="3"
+                             HorizontalAlignment="Stretch"
+                             VerticalAlignment="Stretch"/>
                     <!-- Import / Export -->
                     <TextBlock Grid.Column="2"
                                Grid.Row="0"
@@ -107,40 +112,16 @@
                     <Button Grid.Column="2"
                             Grid.Row="1"
                             Content="GEDCOM importieren"
-                            Click="ImportGedcom_Click"
-                            MinWidth="200" />
+                            Click="ImportGedcom_Click"/>
                     <Button Grid.Column="2"
                             Grid.Row="2"
                             Content="GEDCOM exportieren"
-                            Click="ExportGedcom_Click"
-                            MinWidth="200" />
-                    <!-- TODO: Move to theme: Background, Foreground, ... -->
-                    <Border Grid.Row="3"
-                            Grid.ColumnSpan="3"
-                            Background="#FFEAD7B8"
-                            Padding="24"
-                            CornerRadius="12"
-                            Margin="0,0,0,24">
-                        <StackPanel>
-                            <!-- TODO: Move to theme: Background, Foreground, ... -->
-                            <TextBlock Text="Ahnenforscherin"
-                                       FontSize="42"
-                                       FontWeight="SemiBold"
-                                       Foreground="#FF3B2A1A"
-                                       TextWrapping="Wrap" />
-                            <!-- TODO: Move to theme: Background, Foreground, ... -->
-                            <TextBlock Text="Deine genealogische Werkbank"
-                                       FontSize="18"
-                                       Foreground="#FF8C5A24"
-                                       Margin="0,-4,0,0" />
-                        </StackPanel>
-                    </Border>
-                    <Grid Grid.Row="4"
-                          Grid.ColumnSpan="3"
-                          Background="{StaticResource PageBackground}">
-                        <TextBlock Text="Ich bin der Zwischenraum!"
-                                   Foreground="{StaticResource AfTextPrimaryBrush}" />
-                    </Grid>
+                            Click="ExportGedcom_Click"/>
+                    <ListBox x:Name="ImportExportListBox"
+                             Grid.Column="2"
+                             Grid.Row="3"
+                             HorizontalAlignment="Stretch"
+                             VerticalAlignment="Stretch"/>
                     <!--<DropShadowPanel Grid.Row="5"
                                      BlurRadius="12"
                                      ShadowOpacity="0.3"
@@ -168,7 +149,7 @@
                 <!-- Status Footer -->
                 <!-- TODO: Add Schlagschatten -->
                 <!-- TODO: Move to theme: Background, Foreground, ... -->
-                <Border Grid.Row="2"
+                <Border Grid.Row="3"
                         Background="#11000000"
                         Padding="12"
                         CornerRadius="6">
