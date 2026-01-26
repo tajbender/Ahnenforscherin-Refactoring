@@ -17,4 +17,9 @@ public partial class AppDbContext : DbContext
         : base(options)
     {
     }
+
+    protected override void OnConfiguring(DbContextOptionsBuilder options)
+    {
+        //options.UseSqlite("Data Source=ahnenforscherin.db");
+    }
 }

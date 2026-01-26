@@ -1,5 +1,6 @@
 ﻿using Ahnenforscherin.Models;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 
 namespace Ahnenforscherin.Repositories;
 
@@ -33,5 +34,20 @@ public class InMemoryPersonRepository : IPersonRepository
     public void Delete(string id)
     {
         _persons.Remove(id);
+    }
+
+    public Task<Person?> GetByIdAsync(int id)
+    {
+        throw new System.NotImplementedException();
+    }
+
+    public Task AddAsync(Person person)
+    {
+        throw new System.NotImplementedException();
+    }
+
+    public Task SaveChangesAsync()
+    {
+        throw new System.NotImplementedException();
     }
 }

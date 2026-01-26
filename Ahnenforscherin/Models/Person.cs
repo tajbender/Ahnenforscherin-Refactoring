@@ -11,9 +11,9 @@ public class Person
     public string Id { get; set; } = Guid.NewGuid().ToString();
 
     // Grunddaten
-    public string? FirstName { get; set; }
-    public string? LastName { get; set; }
-    public string? NickName { get; set; }
+    public string? FirstName { get; set; } = string.Empty;
+    public string? LastName { get; set; } = string.Empty;
+    public string? NickName { get; set; } = string.Empty;
 
     public Gender Sex { get; set; } = Gender.Unknown;
 
