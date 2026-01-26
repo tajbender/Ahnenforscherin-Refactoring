@@ -15,7 +15,10 @@
   </PropertyGroup>
   <ItemGroup>
     <None Remove="Themes\Colors.xaml" />
+    <None Remove="Views\MigrationPage.xaml" />
+    <None Remove="Views\PersonenPage.xaml" />
     <None Remove="Views\SettingsPage.xaml" />
+    <None Remove="Views\StammbaumPage.xaml" />
     <None Remove="Views\WorkbenchPage.xaml" />
   </ItemGroup>
   <ItemGroup>
@@ -88,6 +91,15 @@
 	    <None Update="Themes\Material\Icons.xaml">
 	      <Generator>MSBuild:Compile</Generator>
 	    </None>
+	    <Page Update="Views\MigrationPage.xaml">
+	      <Generator>MSBuild:Compile</Generator>
+	    </Page>
+	    <Page Update="Views\StammbaumPage.xaml">
+	      <Generator>MSBuild:Compile</Generator>
+	    </Page>
+	    <Page Update="Views\PersonenPage.xaml">
+	      <Generator>MSBuild:Compile</Generator>
+	    </Page>
 	  </ItemGroup>
   <!--
     Defining the "HasPackageAndPublishMenuAddedByProject" property here allows the Solution

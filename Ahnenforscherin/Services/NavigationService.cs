@@ -1,3 +1,6 @@
+using Ahnenforscherin.Views;
+using Microsoft.UI.Xaml.Controls;
+using Microsoft.UI.Xaml.Navigation;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics.CodeAnalysis;
@@ -5,10 +8,39 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-using Microsoft.UI.Xaml.Navigation;
-using Microsoft.UI.Xaml.Controls;
-
 namespace Ahnenforscherin.Services;
+
+
+public class NavigationService
+{
+    public Frame Frame { get; set; }
+
+    public void NavigateTo(string tag)
+    {
+        switch (tag)
+        {
+            case "workbench":
+                _ = Frame.Navigate(typeof(WorkbenchPage));
+                break;
+
+            case "personen":
+                _ = Frame.Navigate(typeof(PersonenPage));
+                break;
+
+            case "stammbaum":
+                _ = Frame.Navigate(typeof(StammbaumPage));
+                break;
+
+            case "migration":
+                _ = Frame.Navigate(typeof(MigrationPage));
+                break;
+
+            case "settings":
+                _ = Frame.Navigate(typeof(SettingsPage));
+                break;
+        }
+    }
+}
 
 // For more information on navigation between pages see
 // https://github.com/microsoft/TemplateStudio/blob/main/docs/WinUI/navigation.md

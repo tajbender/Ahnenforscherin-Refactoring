@@ -30,7 +30,7 @@ public partial class App : Application
     private Window? _window;
     public static AppHost Host { get; private set; }
 
-
+    public Window MainWindow  { get; private set; }
 
     /// <summary>
     /// Initializes the singleton application object.  This is the first line of authored code
@@ -53,5 +53,9 @@ public partial class App : Application
 
         _window = new MainWindow();
         _window.Activate();
+        this.MainWindow = _window;
+
+        //var test = var mainWindow = (MainWindow)App.Current.MainWindow;
+
     }
 }

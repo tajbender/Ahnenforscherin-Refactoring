@@ -19,24 +19,33 @@
                         SelectionChanged="NavigationView_SelectionChanged">
             <NavigationView.MenuItems>
                 <NavigationViewItem Content="Workbench"
-                                    Tag="Workbench"
-                                    Icon="Home" />
+                                    Icon="Home"
+                                    Tag="Workbench"/>
                 <NavigationViewItem Content="Personen"
-                                    Icon="People" />
-                <NavigationViewItem Content="Stammbäume"
-                                    Icon="Calendar" />
+                                    Icon="People" 
+                                    Tag="Personen"/>
+                <NavigationViewItem Content="Stammbaum"
+                                    Icon="Calendar" 
+                                    Tag="Stammbaum" />
+                <NavigationViewItem Content="Migration"
+                                    Icon="Calendar" 
+                                    Tag="Migration"/>
             </NavigationView.MenuItems>
             <NavigationView.FooterMenuItems>
                 <NavigationViewItem Content="Benutzerkonten"
-                                    Tag="AccountPage"
-                                    Icon="Account" />
+                                    Icon="Account" 
+                                    IsEnabled="False"
+                                    Tag="AccountPage"/>
                 <NavigationViewItem Content="Datenquellen"
-                                    Tag="DatasourcePage"
-                                    Icon="Library" />
+                                    Icon="Library" 
+                                    IsEnabled="False"
+                                    Tag="DatasourcePage"/>
                 <NavigationViewItem Content="Hilfe"
-                                    Tag="HelpPage"
-                                    Icon="Help" />
+                                    Icon="Help" 
+                                    IsEnabled="False"
+                                    Tag="HelpPage"/>
             </NavigationView.FooterMenuItems>
+            <!-- Content Frame -->
             <Frame x:Name="ContentFrame" />
         </NavigationView>
     </Grid>
