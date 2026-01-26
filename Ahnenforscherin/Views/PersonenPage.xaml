@@ -8,10 +8,56 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid>
-        <TextBlock Text="Personen (noch leer)"
-                   HorizontalAlignment="Center"
-                   VerticalAlignment="Center"
-                   FontSize="24" />
-    </Grid>
+
+    <ScrollViewer>
+        <StackPanel Padding="32" Spacing="24">
+
+            <!-- Titel -->
+            <TextBlock Text="Personen"
+                       FontSize="28"
+                       FontWeight="SemiBold" />
+
+            <!-- Beschreibung -->
+            <TextBlock TextWrapping="Wrap"
+                       FontSize="16"
+                       Opacity="0.85">
+                Hier werden später alle Personen deiner Familiengeschichte angezeigt.
+                Du kannst neue Personen anlegen, bearbeiten und durchsuchen.
+            </TextBlock>
+
+            <!-- Quick Action -->
+            <Button Content="Neue Person anlegen"
+                    HorizontalAlignment="Left"
+                    Style="{StaticResource AccentButtonStyle}" />
+
+            <!-- Platzhalter für Liste -->
+            <Border Background="{ThemeResource CardBackgroundFillColorDefaultBrush}"
+                    CornerRadius="12"
+                    Padding="24"
+                    MinHeight="200"
+                    Opacity="0.8">
+
+                <StackPanel HorizontalAlignment="Center"
+                            VerticalAlignment="Center"
+                            Spacing="12">
+
+                    <FontIcon Glyph="&#xE77B;"
+                              FontFamily="Segoe Fluent Icons"
+                              FontSize="48"
+                              Opacity="0.5" />
+
+                    <TextBlock Text="Noch keine Personen vorhanden"
+                               FontSize="18"
+                               Opacity="0.7" />
+
+                    <TextBlock Text="Sobald du Personen anlegst oder importierst, erscheinen sie hier."
+                               TextAlignment="Center"
+                               Opacity="0.6" />
+                </StackPanel>
+
+            </Border>
+
+        </StackPanel>
+    </ScrollViewer>
+
 </Page>

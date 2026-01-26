@@ -8,12 +8,55 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Page>
-        <Grid>
-            <TextBlock Text="Migration (noch leer)"
-                   HorizontalAlignment="Center"
-                   VerticalAlignment="Center"
-                   FontSize="24" />
-        </Grid>
-    </Page>
+    <ScrollViewer>
+        <StackPanel Padding="32" Spacing="24">
+
+            <!-- Titel -->
+            <TextBlock Text="Migration und Orte"
+                       FontSize="28"
+                       FontWeight="SemiBold" />
+
+            <!-- Beschreibung -->
+            <TextBlock TextWrapping="Wrap"
+                       FontSize="16"
+                       Opacity="0.85">
+                Hier wirst du später die Lebenswege deiner Vorfahren erkunden.
+                Orte, Umzüge, Auswanderungen und historische Routen werden hier
+                visuell dargestellt.
+            </TextBlock>
+
+            <!-- Quick Action -->
+            <Button Content="Neue Migrations-Ansicht erstellen"
+                    HorizontalAlignment="Left"
+                    Style="{StaticResource AccentButtonStyle}" />
+
+            <!-- Platzhalter für Karten- oder Weg-Visualisierung -->
+            <Border Background="{ThemeResource CardBackgroundFillColorDefaultBrush}"
+                    CornerRadius="12"
+                    Padding="24"
+                    MinHeight="250"
+                    Opacity="0.8">
+
+                <StackPanel HorizontalAlignment="Center"
+                            VerticalAlignment="Center"
+                            Spacing="12">
+
+                    <FontIcon Glyph="&#xE707;"
+                              FontFamily="Segoe Fluent Icons"
+                              FontSize="48"
+                              Opacity="0.5" />
+
+                    <TextBlock Text="Noch keine Migrations-Ansicht vorhanden"
+                               FontSize="18"
+                               Opacity="0.7" />
+
+                    <TextBlock Text="Sobald du Orte und Wege erfasst, erscheinen sie hier."
+                               TextAlignment="Center"
+                               Opacity="0.6" />
+                </StackPanel>
+
+            </Border>
+
+        </StackPanel>
+    </ScrollViewer>
 </Page>

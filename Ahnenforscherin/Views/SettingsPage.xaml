@@ -8,64 +8,147 @@
     xmlns:xaml="using:Microsoft.UI.Xaml"
     xmlns:local="using:Ahnenforscherin.Views"
     mc:Ignorable="d">
-    <Grid Padding="32" x:Name="ContentArea">
-        <StackPanel Spacing="24" Grid.Row="0">
-            <TextBlock Text="Einstellungen"
+
+
+        <ScrollViewer>
+            <StackPanel Padding="32" Spacing="24">
+
+                <!-- Titel -->
+                <TextBlock Text="Einstellungen"
+                       FontSize="28"
+                       FontWeight="SemiBold" />
+
+                <!-- Beschreibung -->
+                <TextBlock TextWrapping="Wrap"
+                       FontSize="16"
+                       Opacity="0.85">
+                Passe Ahnenforscherin an deine Bedürfnisse an. 
+                Hier findest du Optionen für Darstellung, Daten, Sprache und mehr.
+                </TextBlock>
+
+                <!-- Abschnitt: Darstellung -->
+                <StackPanel Spacing="12">
+                    <StackPanel Orientation="Horizontal" Spacing="12">
+                        <FontIcon Glyph="&#xE793;" FontFamily="Segoe Fluent Icons" FontSize="24" />
+                        <TextBlock Text="Darstellung" FontSize="20" FontWeight="SemiBold" />
+                    </StackPanel>
+
+                    <Border Background="{ThemeResource CardBackgroundFillColorDefaultBrush}"
+                        CornerRadius="12"
+                        Padding="16"
+                        Opacity="0.9">
+
+                        <StackPanel Spacing="12">
+
+                            <TextBlock Text="App-Theme"
+                                   FontSize="16"
+                                   FontWeight="SemiBold" />
+
+                            <ComboBox Width="200">
+                                <ComboBoxItem Content="Systemstandard" />
+                                <ComboBoxItem Content="Hell" />
+                                <ComboBoxItem Content="Dunkel" />
+                            </ComboBox>
+
+                        </StackPanel>
+
+                    </Border>
+                </StackPanel>
+
+                <!-- Abschnitt: Daten -->
+                <StackPanel Spacing="12">
+                    <StackPanel Orientation="Horizontal" Spacing="12">
+                        <FontIcon Glyph="&#xE8DB;" FontFamily="Segoe Fluent Icons" FontSize="24" />
+                        <TextBlock Text="Daten" FontSize="20" FontWeight="SemiBold" />
+                    </StackPanel>
+
+                    <Border Background="{ThemeResource CardBackgroundFillColorDefaultBrush}"
+                        CornerRadius="12"
+                        Padding="16"
+                        Opacity="0.9">
+
+                        <StackPanel Spacing="12">
+
+                            <TextBlock Text="Datenbank verwalten"
+                                   FontSize="16"
+                                   FontWeight="SemiBold" />
+
+                            <Button Content="Datenbank öffnen" HorizontalAlignment="Left" />
+                            <Button Content="Datenbank wechseln" HorizontalAlignment="Left" />
+                            <Button Content="Backup erstellen" HorizontalAlignment="Left" />
+
+                        </StackPanel>
+
+                    </Border>
+                </StackPanel>
+
+
+            <Grid Padding="32" x:Name="ContentArea">
+                <StackPanel Spacing="24" Grid.Row="0">
+                    <TextBlock Text="Einstellungen"
                        Style="{StaticResource TitleTextBlockStyle}" />
-            <StackPanel Spacing="12">
-                <TextBlock Text="Allgemein"
+                    <StackPanel Spacing="12">
+                        <TextBlock Text="Allgemein"
                            Style="{StaticResource SubtitleTextBlockStyle}" />
-                <ToggleSwitch Header="Dark Mode"
+                        <ToggleSwitch Header="Dark Mode"
                               OffContent="Hell"
                               OnContent="Dunkel" />
-                <ComboBox Header="Theme"
+                        <ComboBox Header="Theme"
                           PlaceholderText="Theme auswählen">
-                    <ComboBoxItem Content="Fluent" />
-                    <ComboBoxItem Content="Material" />
-                    <ComboBoxItem Content="Indy" />
-                </ComboBox>
-                <Button Content="Datenbank öffnen"
+                            <ComboBoxItem Content="Fluent" />
+                            <ComboBoxItem Content="Material" />
+                            <ComboBoxItem Content="Indy" />
+                        </ComboBox>
+                        <Button Content="Datenbank öffnen"
                         HorizontalAlignment="Left"
                         Style="{StaticResource AccentButtonStyle}" />
-                <!-- Titel -->
-                <TextBlock Text="Über Ahnenforscherin"
+                        <!-- Titel -->
+                        <TextBlock Text="Über Ahnenforscherin"
                            Style="{StaticResource TitleTextBlockStyle}" />
-                <!-- App-Beschreibung -->
-                <TextBlock TextWrapping="Wrap"
+                        <!-- App-Beschreibung -->
+                        <TextBlock TextWrapping="Wrap"
                            FontSize="16"
                            Opacity="0.85">
                 Ahnenforscherin ist eine moderne, liebevoll gestaltete Genealogie-App,
                 die das Erkunden der eigenen Familiengeschichte zu einem kleinen Abenteuer macht.
-                </TextBlock>
-                <!-- Version -->
-                <StackPanel Orientation="Horizontal" Spacing="12">
-                    <TextBlock Text="Version:" FontWeight="SemiBold"/>
-                    <TextBlock x:Name="VersionText" />
-                </StackPanel>
-                <!-- Entwickler -->
-                <StackPanel Orientation="Horizontal" Spacing="12">
-                    <TextBlock Text="Entwickelt von:" FontWeight="SemiBold"/>
-                    <TextBlock Text="Thorsten (und Copilot als treuer Begleiter)" />
-                </StackPanel>
-                <!-- Links -->
-                <StackPanel Spacing="8">
-                    <TextBlock Text="Links" Style="{StaticResource SubtitleTextBlockStyle}" />
+                        </TextBlock>
+                        <!-- Version -->
+                        <StackPanel Orientation="Horizontal" Spacing="12">
+                            <TextBlock Text="Version:" FontWeight="SemiBold"/>
+                            <TextBlock x:Name="VersionText" />
+                        </StackPanel>
+                        <!-- Entwickler -->
+                        <StackPanel Orientation="Horizontal" Spacing="12">
+                            <TextBlock Text="Entwickelt von:" FontWeight="SemiBold"/>
+                            <TextBlock Text="Thorsten (und Copilot als treuer Begleiter)" />
+                        </StackPanel>
+                        <!-- Links -->
+                        <StackPanel Spacing="8">
+                            <TextBlock Text="Links" Style="{StaticResource SubtitleTextBlockStyle}" />
 
-                    <HyperlinkButton Content="Projekt auf GitHub"
+                            <HyperlinkButton Content="Projekt auf GitHub"
                                  NavigateUri="https://github.com/dein-repo" />
 
-                    <HyperlinkButton Content="Website (optional)"
+                            <HyperlinkButton Content="Website (optional)"
                                  NavigateUri="https://deine-website.de" />
 
+                        </StackPanel>
+                    </StackPanel>
                 </StackPanel>
-            </StackPanel>
-        </StackPanel>
-        <!-- Kleiner Footer -->
-        <TextBlock Grid.Row="1"
+                <!-- Kleiner Footer -->
+                <TextBlock Grid.Row="1"
                    HorizontalAlignment="Center"
             Text="© 2026 Ahnenforscherin – Alle Rechte vorbehalten."
                    FontSize="12"
                    Opacity="0.6"
                    Margin="0,20,0,0"/>
-    </Grid>
+            </Grid>
+
+
+        </StackPanel>
+        
+        
+        </ScrollViewer>
+
+
 </Page>
