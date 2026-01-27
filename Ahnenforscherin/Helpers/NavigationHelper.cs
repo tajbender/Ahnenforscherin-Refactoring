@@ -1,7 +1,7 @@
 ﻿using Microsoft.UI.Xaml;
 using Microsoft.UI.Xaml.Controls;
 
-namespace electrifier.Helpers;
+namespace Ahnenforscherin.Helpers;
 
 // Helper class to set the navigation target for a NavigationViewItem.
 //

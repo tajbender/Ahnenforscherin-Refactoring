@@ -1,6 +1,6 @@
 ﻿using CommunityToolkit.Mvvm.ComponentModel;
 
-namespace electrifier.ViewModels;
+namespace Ahnenforscherin.ViewModels;
 
 public partial class FileManagementViewModel : ObservableRecipient
 {

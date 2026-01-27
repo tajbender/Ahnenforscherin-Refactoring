@@ -1,7 +1,7 @@
 ﻿using Microsoft.UI.Xaml;
 using Microsoft.UI.Xaml.Data;
 
-namespace electrifier.Helpers;
+namespace Ahnenforscherin.Helpers;
 
 //public class EnumToBooleanConverter : IValueConverter
 //{

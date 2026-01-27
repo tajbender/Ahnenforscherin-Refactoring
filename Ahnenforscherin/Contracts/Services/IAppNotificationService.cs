@@ -1,6 +1,6 @@
 ﻿using System.Collections.Specialized;
 
-namespace electrifier.Contracts.Services;
+namespace Ahnenforscherin.Contracts.Services;
 
 public interface IAppNotificationService
 {

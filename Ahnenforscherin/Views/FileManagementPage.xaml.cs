@@ -1,7 +1,7 @@
-﻿using electrifier.ViewModels;
+﻿using Ahnenforscherin.ViewModels;
 using Microsoft.UI.Xaml.Controls;
 
-namespace electrifier.Views;
+namespace Ahnenforscherin.Views;
 
 public sealed partial class FileManagementPage : Page
 {

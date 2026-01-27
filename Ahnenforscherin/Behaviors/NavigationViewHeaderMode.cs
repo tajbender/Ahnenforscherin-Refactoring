@@ -1,4 +1,4 @@
-﻿namespace electrifier.Behaviors;
+﻿namespace Ahnenforscherin.Behaviors;
 
 public enum NavigationViewHeaderMode
 {

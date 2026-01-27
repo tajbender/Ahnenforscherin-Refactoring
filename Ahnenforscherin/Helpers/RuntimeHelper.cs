@@ -1,7 +1,7 @@
 ﻿using System.Runtime.InteropServices;
 using System.Text;
 
-namespace electrifier.Helpers;
+namespace Ahnenforscherin.Helpers;
 
 public class RuntimeHelper
 {

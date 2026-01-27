@@ -2,7 +2,7 @@
 
 
 
-namespace electrifier.Contracts.Services;
+namespace Ahnenforscherin.Contracts.Services;
 
 public interface IActivationService
 {

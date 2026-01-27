@@ -1,4 +1,4 @@
-﻿namespace electrifier.Models;
+﻿namespace Ahnenforscherin.Models;
 
 public class LocalSettingsOptions
 {

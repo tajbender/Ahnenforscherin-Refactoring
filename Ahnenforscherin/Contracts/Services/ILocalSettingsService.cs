@@ -1,6 +1,6 @@
 ﻿using System.Threading.Tasks;
 
-namespace electrifier.Contracts.Services;
+namespace Ahnenforscherin.Contracts.Services;
 
 public interface ILocalSettingsService
 {

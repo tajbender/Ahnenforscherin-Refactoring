@@ -1,6 +1,6 @@
 ﻿using Microsoft.UI.Xaml.Controls;
 
-namespace electrifier.Helpers;
+namespace Ahnenforscherin.Helpers;
 
 public static class FrameExtensions
 {

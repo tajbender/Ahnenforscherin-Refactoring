@@ -2,7 +2,7 @@
 using Microsoft.Web.WebView2.Core;
 using System;
 
-namespace electrifier.Contracts.Services;
+namespace Ahnenforscherin.Contracts.Services;
 
 public interface IWebViewService
 {

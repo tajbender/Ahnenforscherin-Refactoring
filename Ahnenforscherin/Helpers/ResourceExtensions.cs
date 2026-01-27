@@ -1,6 +1,6 @@
 ﻿using Microsoft.Windows.ApplicationModel.Resources;
 
-namespace electrifier.Helpers;
+namespace Ahnenforscherin.Helpers;
 
 public static class ResourceExtensions
 {
