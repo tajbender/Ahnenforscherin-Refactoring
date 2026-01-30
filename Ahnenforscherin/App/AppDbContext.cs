@@ -19,6 +19,7 @@ public partial class AppDbContext : DbContext
     public AppDbContext(DbContextOptions<AppDbContext> options)
         : base(options)
     {
+        optionsBuilder = options;
     }
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
